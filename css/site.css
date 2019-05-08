@@ -1,0 +1,155 @@
+/* ESTILO GERAL */
+/* 1. Cores */
+/* RESET
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* FLEXBOX */
+.container {
+  margin: 0 auto; }
+
+/* Layout */
+.cabecalho {
+  border: 1px solid red;
+  padding: 15px 0; }
+
+.cabecalho .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+/* Navegacao */
+.cabecalho-nav-bar {
+  display: flex;
+  font-weight: bold;
+  list-style-type: none;
+  line-height: 1.5em; }
+
+.cabecalho-nav-bar a {
+  opacity: .8;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 2em;
+  color: #ff6600; }
+
+.cabecalho-nav-bar a:hover {
+  opacity: 1; }
+
+.rodape {
+  border: 1px solid blue;
+  padding: 15px; }
+
+.rodape .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.secao {
+  display: flex;
+  border: 1px solid blueviolet;
+  padding: 15px; }
+
+.conteudo {
+  border: 1px solid brown;
+  padding: 15px;
+  width: 100%; }
+
+.cartao {
+  background-color: darkgreen;
+  padding: 15px; }
+
+.formulario {
+  display: flex; }
+
+.formulario .campos {
+  border: none; }
+
+/* Imagens */
+.logo {
+  display: block; }
+
+.logo img {
+  max-width: 400px;
+  min-width: 100px; }
+
+/* FONTES*/
+/* @import url('https://fonts.googleapis.com/css?family=Raleway');*/
+/* Formatacao */
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62,5%; }
+
+body {
+  padding: 0; }
+
+p {
+  margin: 1em 0;
+  line-height: 1.5em; }
+
+h1 {
+  margin: 1em 0;
+  font-size: 3rem;
+  text-transform: uppercase; }
+
+h2 {
+  margin: 1em 0;
+  font-size: 1.9em; }
+
+h3 {
+  margin: 1em 0;
+  font-size: 1.5em; }
+
+h4 {
+  margin: 1em 0;
+  font-size: 1.2em; }
+
+img {
+  width: 100%; }
+
+/*# sourceMappingURL=site.css.map */

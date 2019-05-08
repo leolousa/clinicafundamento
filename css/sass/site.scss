@@ -1,0 +1,61 @@
+/* ESTILO GERAL */
+
+/* 1. Cores */
+$cor-principal-1: #9900cc;
+$cor-principal-2: #33cc99;
+$cor-principal-3: #ff6600;
+$cor-principal-4: #ffcc00;
+$cor-principal-5: #737373;
+$cor-principal-6: #000000;
+
+$cor-secundaria-1: #e3b4f4;
+$cor-secundaria-2: #a9dbca;
+$cor-secundaria-3: #fdb88a;
+$cor-secundaria-4: #ffe16a;
+$cor-secundaria-5: #d9d9d9;
+$cor-secundaria-6: #a6a6a6;
+
+$cor-fundo: white;
+
+@import 'reset';
+
+@import 'flexbox';
+
+/* FONTES*/
+/* @import url('https://fonts.googleapis.com/css?family=Raleway');*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+
+/* Formatacao */
+
+html{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62,5%;
+}
+body {
+  padding: 0;
+}
+p {
+  margin: 1em 0;
+  line-height: 1.5em;
+}
+h1 {
+  margin: 1em 0;
+  font-size: 3rem;
+  text-transform: uppercase
+}
+h2 {
+  margin: 1em 0;
+  font-size: 1.9em;
+}
+h3 {
+  margin: 1em 0;
+  font-size: 1.5em;
+}
+h4 {
+  margin: 1em 0;
+  font-size: 1.2em;
+}
+img{
+  width: 100%;
+}
+

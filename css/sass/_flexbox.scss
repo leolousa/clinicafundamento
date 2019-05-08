@@ -1,0 +1,78 @@
+/* FLEXBOX */
+
+.container {
+  margin: 0 auto;
+}
+
+/* Layout */
+.cabecalho {
+  border: 1px solid red;
+  padding: 15px 0;
+  
+}
+.cabecalho .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Navegacao */
+.cabecalho-nav-bar {
+  display: flex;
+	font-weight: bold;
+  list-style-type: none;
+  line-height: 1.5em;
+}
+.cabecalho-nav-bar a {
+  opacity: .8;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 2em;
+  color: $cor-principal-3;
+}
+.cabecalho-nav-bar a:hover {
+  opacity: 1;
+}
+
+
+.rodape {
+  border: 1px solid blue;
+  padding: 15px;
+}
+.rodape .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.secao {
+  display: flex;
+  border: 1px solid blueviolet;
+  padding: 15px;
+}
+.conteudo {
+  border: 1px solid brown;
+  padding: 15px;
+  width: 100%;
+}
+.cartao {
+  background-color: darkgreen;
+  padding: 15px;
+}
+
+// Formulario
+.formulario {
+  display: flex;
+}
+.formulario .campos {
+  border: none;
+}
+
+/* Imagens */
+.logo {
+  display: block;
+}
+.logo img {
+  max-width: 400px;
+  min-width: 100px;
+}
+
