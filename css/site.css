@@ -53,7 +53,6 @@ table {
 .container {
   margin: 0 auto; }
 
-/* Layout */
 .cabecalho {
   border: 1px solid red;
   padding: 15px 0; }
@@ -63,7 +62,6 @@ table {
   align-items: center;
   justify-content: space-between; }
 
-/* Navegacao */
 .cabecalho-nav-bar {
   display: flex;
   font-weight: bold;
@@ -87,8 +85,9 @@ table {
 
 .rodape .container {
   display: flex;
-  align-items: center;
-  justify-content: space-between; }
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 200px; }
 
 .secao {
   display: flex;
@@ -105,10 +104,20 @@ table {
   padding: 15px; }
 
 .formulario {
-  display: flex; }
+  line-height: 3em; }
 
 .formulario .campos {
+  display: flex;
+  flex-flow: column  wrap;
   border: none; }
+
+.formulario .campos label {
+  font-weight: bold; }
+
+.botao-submit {
+  height: 40px;
+  color: white;
+  background-color: blue; }
 
 /* Imagens */
 .logo {
@@ -151,5 +160,12 @@ h4 {
 
 img {
   width: 100%; }
+
+a {
+  line-height: 1.5em;
+  text-decoration: none; }
+
+.titulo {
+  font-weight: bold; }
 
 /*# sourceMappingURL=site.css.map */

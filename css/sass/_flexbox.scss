@@ -4,7 +4,6 @@
   margin: 0 auto;
 }
 
-/* Layout */
 .cabecalho {
   border: 1px solid red;
   padding: 15px 0;
@@ -15,7 +14,6 @@
   align-items: center;
   justify-content: space-between;
 }
-/* Navegacao */
 .cabecalho-nav-bar {
   display: flex;
 	font-weight: bold;
@@ -34,26 +32,29 @@
   opacity: 1;
 }
 
-
 .rodape {
   border: 1px solid blue;
   padding: 15px;
 }
 .rodape .container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 200px ;
 }
+
 .secao {
   display: flex;
   border: 1px solid blueviolet;
   padding: 15px;
 }
+
 .conteudo {
   border: 1px solid brown;
   padding: 15px;
   width: 100%;
 }
+
 .cartao {
   background-color: darkgreen;
   padding: 15px;
@@ -61,12 +62,21 @@
 
 // Formulario
 .formulario {
-  display: flex;
+ line-height: 3em;
 }
 .formulario .campos {
+  display: flex;
+  flex-flow: column  wrap;
   border: none;
 }
-
+.formulario .campos label {
+  font-weight: bold;
+}
+.botao-submit {
+  height: 40px;;
+  color: white;
+  background-color: blue;
+}
 /* Imagens */
 .logo {
   display: block;
