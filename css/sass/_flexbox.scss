@@ -1,25 +1,32 @@
 /* FLEXBOX */
 
 .container {
+  width: 100%;
   margin: 0 auto;
+  font-size: 1em;
 }
 
 .cabecalho {
-  border: 1px solid red;
+  border: 1px solid black;
   padding: 15px 0;
+  background-color: $cor-fundo-cabecalho;
   
 }
 .cabecalho .container {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  align-items: initial;
   justify-content: space-between;
+  align-items: center;
+  background-color: $cor-fundo-container;
 }
 .cabecalho-nav-bar {
   display: flex;
 	font-weight: bold;
   list-style-type: none;
-  line-height: 1.5em;
+  line-height: 2.5em;
 }
+
 .cabecalho-nav-bar a {
   opacity: .8;
   line-height: 1;
@@ -33,7 +40,7 @@
 }
 
 .rodape {
-  border: 1px solid blue;
+  background-color: $cor-fundo-rodape;
   padding: 15px;
 }
 .rodape .container {
@@ -45,21 +52,37 @@
 
 .secao {
   display: flex;
-  border: 1px solid blueviolet;
+  background-color: $cor-fundo-secao;
   padding: 15px;
 }
 
-.conteudo {
-  border: 1px solid brown;
-  padding: 15px;
+.secao-rodape {
+  background-color: $cor-fundo-secao;
   width: 100%;
 }
 
-.cartao {
-  background-color: darkgreen;
-  padding: 15px;
+.conteudo-cartao {
+  display: flex;
+  background-color: $cor-fundo-conteudo-cartao;
+  flex-wrap: wrap;
 }
 
+.cartao {
+	background-color: $cor-fundo-cartao;
+  height: 100px;
+  width: 23%;
+	text-align: center;
+	margin: 1%;
+	transition: .3s;
+	box-shadow: 2px 2px 2px $cor-sombra-cartao;
+	position: relative;
+}
+.cartao:nth-child(4n) { /* Quarto filho do elemento*/
+  margin-right: 0;
+}
+.cartao:nth-child(4n+1) { /* Quinto filho do elemento*/
+  margin-left: 0;
+}
 // Formulario
 .formulario {
  line-height: 3em;
@@ -84,5 +107,30 @@
 .logo img {
   max-width: 400px;
   min-width: 100px;
+}
+
+/*mobile*/
+@media(max-width: 678px) {
+  html {
+    font-size: 1.125em;
+}
+  .cabecalho .container {
+    flex-direction: column;
+  }
+  .cabecalho-nav-bar {
+    display: none;
+    flex-direction: column;
+  }
+  .conteudo-cartao {
+    flex-direction: column;
+    justify-content: end;
+  }
+  .cartao {
+    width: auto;
+  }
+ 
+  .secao-rodape {
+    height: auto;
+  }
 }
 
