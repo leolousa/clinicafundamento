@@ -6,6 +6,8 @@
 
 @import 'flexbox';
 
+
+
 /* FONTES*/
 /* @import url('https://fonts.googleapis.com/css?family=Raleway');*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
@@ -14,7 +16,7 @@
 
 html{
   font-family: 'Montserrat', sans-serif;
-  font-size: 62,5%;
+  font-size: 100%;
   background-color: $cor-fundo-pagina;
   width: 100%;
 }
@@ -27,7 +29,7 @@ p {
 }
 h1 {
   margin: 1em 0;
-  font-size: 3em;
+  font-size: 2.8em;
   text-transform: uppercase;
 }
 h2 {
@@ -43,7 +45,7 @@ h4 {
   font-size: 1.2em;
 }
 img{
-  width: 100%;
+  max-width: 100%;
 }
 a {
   line-height: 1.5em;

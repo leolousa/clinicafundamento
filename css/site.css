@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ESTILO GERAL */
 /* 1. Cores */
 /* RESET
@@ -61,6 +62,7 @@ table {
   background-color: red; }
 
 .cabecalho .container {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: initial;
@@ -69,12 +71,10 @@ table {
   background-color: yellow; }
 
 .cabecalho-nav-bar {
-  display: flex;
-  font-weight: bold;
-  list-style-type: none;
-  line-height: 2.5em; }
+  font-weight: bold; }
 
 .cabecalho-nav-bar a {
+  font-size: 1.2em;
   opacity: .8;
   line-height: 1;
   text-decoration: none;
@@ -96,6 +96,7 @@ table {
   height: 200px; }
 
 .secao {
+  border: 1px solid black;
   display: flex;
   background-color: blue;
   padding: 15px; }
@@ -139,11 +140,10 @@ table {
   font-weight: bold; }
 
 .botao-submit {
-  height: 40px;
+  margin: 10px;
   color: white;
   background-color: blue; }
 
-/* Imagens */
 .logo {
   display: block; }
 
@@ -151,13 +151,12 @@ table {
   max-width: 400px;
   min-width: 100px; }
 
-/*mobile*/
+/* Mobile at├® 678px */
 @media (max-width: 678px) {
-  html {
-    font-size: 1.125em; }
-
   .cabecalho .container {
-    flex-direction: column; }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
 
   .cabecalho-nav-bar {
     display: none;
@@ -171,13 +170,32 @@ table {
     width: auto; }
 
   .secao-rodape {
-    height: auto; } }
+    height: auto; }
+
+  .logo img {
+    width: 380px; } }
+/* Mobile maior 678px */
+@media (min-width: 678px) {
+  .cabecalho-nav-bar {
+    display: flex;
+    flex-direction: column; }
+
+  .cabecalho-nav-bar a {
+    margin-bottom: 10px; }
+
+  .logo img {
+    width: 200px; } }
+/* Mobile maior que 1000px */
+@media (min-width: 1000px) {
+  .cabecalho-nav-bar {
+    display: flex;
+    flex-direction: initial; } }
 /* FONTES*/
 /* @import url('https://fonts.googleapis.com/css?family=Raleway');*/
 /* Formatacao */
 html {
   font-family: 'Montserrat', sans-serif;
-  font-size: 62,5%;
+  font-size: 100%;
   background-color: white;
   width: 100%; }
 
@@ -190,7 +208,7 @@ p {
 
 h1 {
   margin: 1em 0;
-  font-size: 3em;
+  font-size: 2.8em;
   text-transform: uppercase; }
 
 h2 {
@@ -206,7 +224,7 @@ h4 {
   font-size: 1.2em; }
 
 img {
-  width: 100%; }
+  max-width: 100%; }
 
 a {
   line-height: 1.5em;
