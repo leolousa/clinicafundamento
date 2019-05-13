@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* ESTILO GERAL */
 /* 1. Cores */
-/* RESET
+/* 2. RESET
    http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -50,7 +50,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* FLEXBOX */
+/* 3. FLEXBOX */
 .container {
   width: 100%;
   margin: 0 auto;
@@ -151,7 +151,7 @@ table {
   max-width: 400px;
   min-width: 100px; }
 
-/* Mobile at├® 678px */
+/* Celulares at├® 678px */
 @media (max-width: 678px) {
   .cabecalho .container {
     display: flex;
@@ -167,14 +167,16 @@ table {
     justify-content: end; }
 
   .cartao {
-    width: auto; }
+    width: auto;
+    min-height: 350px;
+    margin-bottom: 20px; }
 
   .secao-rodape {
     height: auto; }
 
   .logo img {
-    width: 380px; } }
-/* Mobile maior 678px */
+    width: 320px; } }
+/* Tablets menor que 678px */
 @media (min-width: 678px) {
   .cabecalho-nav-bar {
     display: flex;
@@ -185,7 +187,7 @@ table {
 
   .logo img {
     width: 200px; } }
-/* Mobile maior que 1000px */
+/* Mobile menor que 1000px */
 @media (min-width: 1000px) {
   .cabecalho-nav-bar {
     display: flex;

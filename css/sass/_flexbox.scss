@@ -1,4 +1,4 @@
-/* FLEXBOX */
+/* 3. FLEXBOX */
 
 .container {
   width: 100%;
@@ -101,7 +101,7 @@
 }
 
 
-/* Mobile até 678px */
+/* Celulares até 678px */
 @media(max-width: 678px) {
   .cabecalho .container {
     display: flex;
@@ -118,16 +118,18 @@
   }
   .cartao {
     width: auto;
+    min-height: 350px;
+    margin-bottom: 20px;
   }
   .secao-rodape {
     height: auto;
   }
   .logo img {
-    width: 380px;
+    width: 320px;
   }
 }
 
-/* Mobile maior 678px */
+/* Tablets menor que 678px */
 @media(min-width: 678px) {
   .cabecalho-nav-bar {
     display: flex;
@@ -141,7 +143,7 @@
   }
 }
 
-/* Mobile maior que 1000px */
+/* Mobile menor que 1000px */
 @media (min-width: 1000px) {
   .cabecalho-nav-bar {
     display: flex;
