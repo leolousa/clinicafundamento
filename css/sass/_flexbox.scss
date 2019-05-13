@@ -1,17 +1,17 @@
 /* 3. FLEXBOX */
 
 .container {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   font-size: 1em;
 }
 .cabecalho {
-  border: 1px solid black;
-  padding: 15px 0;
+  //border: 1px solid black;
+
   background-color: $cor-fundo-cabecalho;
 }
 .cabecalho .container {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   align-items: initial;
@@ -39,6 +39,7 @@
   padding: 15px;
 }
 .rodape .container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -103,6 +104,7 @@
 
 /* Celulares até 678px */
 @media(max-width: 678px) {
+
   .cabecalho .container {
     display: flex;
     flex-direction: column;
@@ -131,6 +133,11 @@
 
 /* Tablets menor que 678px */
 @media(min-width: 678px) {
+  .cabecalho {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
   .cabecalho-nav-bar {
     display: flex;
     flex-direction: column;
@@ -148,6 +155,9 @@
   .cabecalho-nav-bar {
     display: flex;
     flex-direction: initial;
+  }
+  .cabecalho-nav-bar a {
+    margin-right: 1em;
   }
 
 }
