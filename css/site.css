@@ -57,14 +57,11 @@ table {
   font-size: 1em; }
 
 .cabecalho {
-  box-shadow: 1px 6px 25px 0px #CCC;
   background-color: #fff; }
 
 .cabecalho .container {
-  width: 90%;
   display: flex;
   flex-direction: row;
-  align-items: initial;
   justify-content: space-between;
   align-items: center;
   background-color: #fff; }
@@ -164,18 +161,32 @@ table {
   cursor: pointer; }
 
 .logo {
-  display: block; }
+  display: block;
+  width: 300px;
+  height: 192px;
+  transform: scale(0.8);
+  background-image: url(../img/logo-fundamento@300x192.png);
+  background-repeat: no-repeat; }
 
 .logo img {
   max-width: 400px;
   min-width: 100px; }
 
+.logo2 {
+  display: none; }
+
 /* Celulares at├® 678px */
 @media (max-width: 678px) {
+  .cabecalho {
+    position: sticky;
+    box-shadow: 0px 1px 15px 0px #CCC;
+    top: 0px;
+    z-index: 999; }
+
   .cabecalho .container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around; }
+    align-content: initial;
+    justify-content: left; }
 
   .cabecalho-nav-bar {
     display: none;
@@ -193,11 +204,28 @@ table {
   .secao-rodape {
     height: auto; }
 
+  .logo {
+    width: 64px;
+    height: 80px;
+    background-image: url(../img/fundamento@64.png);
+    background-repeat: no-repeat;
+    background-position-y: 8px; }
+
+  .logo2 {
+    display: block;
+    transform: scale(0.8);
+    width: 371px;
+    height: 80px;
+    background-image: url(../img/logo-fundamento@371x64.png);
+    background-repeat: no-repeat;
+    background-position-y: 8px; }
+
   .logo img {
-    width: 320px; } }
+    width: 180px; } }
 /* Tablets menor que 678px */
 @media (min-width: 678px) {
   .cabecalho {
+    box-shadow: 0px 6px 25px 0px #CCC;
     position: sticky;
     top: 0;
     z-index: 999; }
@@ -213,6 +241,9 @@ table {
     width: 200px; } }
 /* Mobile menor que 1000px */
 @media (min-width: 1000px) {
+  .cabecalho .container {
+    justify-content: space-between; }
+
   .cabecalho-nav-bar {
     display: flex;
     flex-direction: initial; }
