@@ -57,7 +57,8 @@ table {
   font-size: 1em; }
 
 .cabecalho {
-  background-color: red; }
+  box-shadow: 1px 6px 25px 0px #CCC;
+  background-color: #fff; }
 
 .cabecalho .container {
   width: 90%;
@@ -66,7 +67,7 @@ table {
   align-items: initial;
   justify-content: space-between;
   align-items: center;
-  background-color: yellow; }
+  background-color: #fff; }
 
 .cabecalho-nav-bar {
   font-weight: bold; }
@@ -84,25 +85,37 @@ table {
   opacity: 1; }
 
 .rodape {
-  background-color: gray;
+  background-color: #9900cc;
   padding: 15px; }
 
 .rodape .container {
+  width: 90%;
+  height: 90%; }
+
+.rodape-navMap-list {
+  display: flex;
+  flex-flow: column wrap;
+  height: 240px; }
+
+.rodape a {
+  color: #fff;
+  margin-top: 0; }
+
+.rodape h4 {
+  color: #fff;
+  font-weight: bold; }
+
+.secao {
+  display: flex;
+  background-color: #F2F5F7;
+  padding: 15px; }
+
+.secao-rodape {
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 200px; }
-
-.secao {
-  border: 1px solid black;
-  display: flex;
-  background-color: blue;
-  padding: 15px; }
-
-.secao-rodape {
-  background-color: blue;
-  width: 100%; }
+  background-color: transparent; }
 
 .conteudo-cartao {
   display: flex;
@@ -110,7 +123,7 @@ table {
   flex-wrap: wrap; }
 
 .cartao {
-  background-color: white;
+  background-color: #fff;
   height: 100px;
   width: 23%;
   text-align: center;
@@ -133,15 +146,22 @@ table {
 .formulario .campos {
   display: flex;
   flex-flow: column  wrap;
-  border: none; }
+  border: none;
+  margin: 20px; }
 
 .formulario .campos label {
   font-weight: bold; }
 
 .botao-submit {
-  margin: 10px;
-  color: white;
-  background-color: blue; }
+  outline: 0;
+  height: 50px;
+  border: 1px solid #33cc99;
+  box-sizing: border-box;
+  font-size: 1.2em;
+  border-radius: 5px;
+  background-color: #33cc99;
+  color: #fff;
+  cursor: pointer; }
 
 .logo {
   display: block; }
@@ -205,7 +225,7 @@ table {
 html {
   font-family: 'Montserrat', sans-serif;
   font-size: 100%;
-  background-color: white;
+  background-color: #fff;
   width: 100%; }
 
 body {
