@@ -175,6 +175,65 @@ table {
 .logo2 {
   display: none; }
 
+.menu-abrir,
+.menu-fechar {
+  background: none;
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  font-size: 1.6em;
+  text-indent: -999em; }
+
+.menu-abrir {
+  height: 0;
+  width: .75em;
+  padding-top: .100em;
+  border-top: .375em double #000;
+  border-bottom: .125em solid #000;
+  vertical-align: middle;
+  margin: 0.5em; }
+
+.menu-fechar {
+  position: relative;
+  height: 1.8em;
+  width: 1em; }
+
+.menu-fechar:before {
+  content: '\00D7';
+  position: absolute;
+  font-size: 1.4em;
+  top: 0;
+  bottom: 10px;
+  left: 0;
+  text-indent: 0; }
+
+@media not all and (max-width: 678px) {
+  .menu-abrir,
+  .menu-fechar {
+    display: none; }
+
+  .menu-abrir,
+  .menu-fechar {
+    background: none;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    font-size: 1.6em;
+    text-indent: -999em; }
+
+  .menu-abrir {
+    height: 0;
+    width: .75em;
+    padding-top: .125em;
+    border-top: .375em double #000;
+    border-bottom: .125em solid #000;
+    vertical-align: middle;
+    margin: 0.5em; }
+
+  .menu-fechar {
+    position: relative;
+    height: 1em;
+    width: 1em; } }
 /* Celulares at├® 678px */
 @media (max-width: 678px) {
   .cabecalho {
@@ -187,10 +246,6 @@ table {
     display: flex;
     align-content: initial;
     justify-content: left; }
-
-  .cabecalho-nav-bar {
-    display: none;
-    flex-direction: column; }
 
   .conteudo-cartao {
     flex-direction: column;
@@ -205,11 +260,12 @@ table {
     height: auto; }
 
   .logo {
-    width: 64px;
+    width: 72px;
     height: 80px;
     background-image: url(../img/fundamento@64.png);
     background-repeat: no-repeat;
-    background-position-y: 8px; }
+    background-position-y: 8px;
+    background-position-x: 8px; }
 
   .logo2 {
     display: block;
@@ -221,7 +277,40 @@ table {
     background-position-y: 8px; }
 
   .logo img {
-    width: 180px; } }
+    width: 180px; }
+
+  .cabecalho-nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background: #f0f0f0;
+    padding: 1em;
+    margin: 0;
+    height: 100%;
+    width: 90%;
+    max-width: 320px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -90%;
+    transition: left 0.3s ease-out; }
+
+  .cabecalho-nav-bar a {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+  .menu-ativo .cabecalho-nav-bar {
+    left: 0; }
+
+  .menu-ativo:after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4); } }
 /* Tablets menor que 678px */
 @media (min-width: 678px) {
   .cabecalho {
