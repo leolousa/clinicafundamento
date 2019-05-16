@@ -1,7 +1,8 @@
 @charset "UTF-8";
 /* ESTILO GERAL */
 /* 1. Cores */
-/* 2. RESET
+/* 2. Assets */
+/* 3. RESET
    http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -50,7 +51,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* 3. FLEXBOX */
+/* 4. FLEXBOX */
 .container {
   width: 90%;
   margin: 0 auto;
@@ -67,7 +68,7 @@ table {
   background-color: #fff; }
 
 .cabecalho-nav-bar {
-  font-weight: bold; }
+  font-weight: normal; }
 
 .cabecalho-nav-bar a {
   font-size: 1.2em;
@@ -104,11 +105,11 @@ table {
 
 .secao {
   display: flex;
+  width: 100%;
   background-color: #F2F5F7;
-  padding: 15px; }
+  padding: 0px; }
 
 .secao-rodape {
-  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -126,7 +127,7 @@ table {
   text-align: center;
   margin: 1%;
   transition: .3s;
-  box-shadow: 2px 2px 2px #CCC;
+  box-shadow: 1px 1px 1px #CCC;
   position: relative; }
 
 .cartao:nth-child(4n) {
@@ -165,7 +166,7 @@ table {
   width: 300px;
   height: 192px;
   transform: scale(0.8);
-  background-image: url(../img/logo-fundamento@300x192.png);
+  background-image: url("../img/logo-fundamento@300x192.png");
   background-repeat: no-repeat; }
 
 .logo img {
@@ -175,6 +176,19 @@ table {
 .logo2 {
   display: none; }
 
+.progress-bar {
+  --progresso: 0;
+  height: 2px;
+  padding: 0px;
+  background-color: #fff;
+  display: flex; }
+
+.progress-bar::before {
+  content: "";
+  width: calc(var(--progresso) * 1%);
+  background-color: #9900cc;
+  transition: all 0.2s ease; }
+
 .menu-abrir,
 .menu-fechar {
   background: none;
@@ -182,14 +196,15 @@ table {
   outline: 0;
   -webkit-appearance: none;
   font-size: 1.6em;
-  text-indent: -999em; }
+  text-indent: -999em;
+  cursor: pointer; }
 
 .menu-abrir {
   height: 0;
   width: .75em;
   padding-top: .100em;
-  border-top: .375em double #000;
-  border-bottom: .125em solid #000;
+  border-top: 0.375em double #9900cc;
+  border-bottom: 0.125em solid #9900cc;
   vertical-align: middle;
   margin: 0.5em; }
 
@@ -201,6 +216,7 @@ table {
 .menu-fechar:before {
   content: '\00D7';
   position: absolute;
+  color: #9900cc;
   font-size: 1.4em;
   top: 0;
   bottom: 10px;
@@ -225,8 +241,8 @@ table {
     height: 0;
     width: .75em;
     padding-top: .125em;
-    border-top: .375em double #000;
-    border-bottom: .125em solid #000;
+    border-top: 0.375em double #9900cc;
+    border-bottom: 0.125em solid #9900cc;
     vertical-align: middle;
     margin: 0.5em; }
 
@@ -262,7 +278,7 @@ table {
   .logo {
     width: 72px;
     height: 80px;
-    background-image: url(../img/fundamento@64.png);
+    background-image: url("../img/fundamento@64.png");
     background-repeat: no-repeat;
     background-position-y: 8px;
     background-position-x: 8px; }
@@ -272,7 +288,7 @@ table {
     transform: scale(0.8);
     width: 371px;
     height: 80px;
-    background-image: url(../img/logo-fundamento@371x64.png);
+    background-image: url("../img/logo-fundamento@371x64.png");
     background-repeat: no-repeat;
     background-position-y: 8px; }
 
@@ -331,7 +347,8 @@ table {
 /* Mobile menor que 1000px */
 @media (min-width: 1000px) {
   .cabecalho .container {
-    justify-content: space-between; }
+    justify-content: space-between;
+    font-size: .9em; }
 
   .cabecalho-nav-bar {
     display: flex;
