@@ -1,6 +1,6 @@
 /* 4. FLEXBOX */
 .container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   font-size: 1em;
 }
@@ -8,6 +8,7 @@
   background-color: $cor-fundo-cabecalho;
 }
 .cabecalho .container {
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -54,7 +55,13 @@
   display: flex;
   width: 100%;
   background-color: $cor-fundo-secao;
-  padding: 0px;
+}
+.secao .container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.front {
+  @include proporcao-responsiva(16,9);
 }
 .secao-rodape {
   display: flex;
@@ -83,27 +90,29 @@
 .cartao:nth-child(4n+1) { /* Quinto filho do elemento*/
   margin-left: 0;
 }
-// Formulario
-.formulario {
- line-height: 3em;
+
+.form-contato {
+  line-height: 3em;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
-.formulario .campos {
+.form-contato .campos {
   display: flex;
   flex-flow: column  wrap;
   border: none;
   margin: 20px;
 }
-.formulario .campos label {
-  font-weight: bold;
-}
-.botao-submit {
-  outline: 0;
-  height: 50px;
-  border: 1px solid $cor-principal-2;
-  box-sizing: border-box;
+.form-contato-botao {
+  margin-top: 1em;
+	background: $cor-principal-2;
+  border: 0;
+  padding: .6em;
   font-size: 1.2em;
-  border-radius: 5px;
-	background-color: $cor-principal-2;
+  @include borda-arredondada;
+  box-shadow: 0 2px 6.65px 0.35px rgba(0,0,0,0.4);
+  font-weight: bold;
+  width: 100%;
 	color: $cor-link-rodape;
 	cursor: pointer;
 }
@@ -249,7 +258,7 @@
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    background: #f0f0f0;
+    background: $cor-fundo-cabecalho;
     padding: 1em;
     margin: 0;
     height: 100%;
@@ -304,7 +313,7 @@
 @media (min-width: 1000px) {
   .cabecalho .container {
     justify-content: space-between;
-    font-size: .9em;
+    font-size: 1em;
   }
   .cabecalho-nav-bar {
     display: flex;

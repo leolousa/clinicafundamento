@@ -53,7 +53,7 @@ table {
 
 /* 4. FLEXBOX */
 .container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   font-size: 1em; }
 
@@ -61,6 +61,7 @@ table {
   background-color: #fff; }
 
 .cabecalho .container {
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -106,8 +107,11 @@ table {
 .secao {
   display: flex;
   width: 100%;
-  background-color: #F2F5F7;
-  padding: 0px; }
+  background-color: #F2F5F7; }
+
+.secao .container {
+  margin-top: 60px;
+  margin-bottom: 60px; }
 
 .secao-rodape {
   display: flex;
@@ -138,26 +142,32 @@ table {
   /* Quinto filho do elemento*/
   margin-left: 0; }
 
-.formulario {
-  line-height: 3em; }
+.form-contato {
+  line-height: 3em;
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
 
-.formulario .campos {
+.form-contato .campos {
   display: flex;
   flex-flow: column  wrap;
   border: none;
   margin: 20px; }
 
-.formulario .campos label {
-  font-weight: bold; }
-
-.botao-submit {
-  outline: 0;
-  height: 50px;
-  border: 1px solid #33cc99;
-  box-sizing: border-box;
+.form-contato-botao {
+  margin-top: 1em;
+  background: #33cc99;
+  border: 0;
+  padding: .6em;
   font-size: 1.2em;
-  border-radius: 5px;
-  background-color: #33cc99;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  border-radius: 0.3em;
+  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+  width: 100%;
   color: #fff;
   cursor: pointer; }
 
@@ -299,7 +309,7 @@ table {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    background: #f0f0f0;
+    background: #fff;
     padding: 1em;
     margin: 0;
     height: 100%;
@@ -348,7 +358,7 @@ table {
 @media (min-width: 1000px) {
   .cabecalho .container {
     justify-content: space-between;
-    font-size: .9em; }
+    font-size: 1em; }
 
   .cabecalho-nav-bar {
     display: flex;
@@ -362,7 +372,7 @@ table {
 html {
   font-family: 'Montserrat', sans-serif;
   font-size: 100%;
-  background-color: #fff;
+  background-color: #F2F5F7;
   width: 100%; }
 
 body {
@@ -373,12 +383,12 @@ p {
   line-height: 1.5em; }
 
 h1 {
-  margin: 1em 0;
+  margin: 1em 0 .8em;
   font-size: 2.8em;
   text-transform: uppercase; }
 
 h2 {
-  margin: 1em 0;
+  margin: 1em 0 .8em;
   font-size: 1.9em; }
 
 h3 {
@@ -389,6 +399,14 @@ h4 {
   margin: 1em 0;
   font-size: 1.2em; }
 
+h5 {
+  margin: 1em 0;
+  font-size: 1em; }
+
+h6 {
+  margin: 1em 0;
+  font-size: .8em; }
+
 img {
   max-width: 100%; }
 
@@ -396,7 +414,23 @@ a {
   line-height: 1.5em;
   text-decoration: none; }
 
+input {
+  width: 100%; }
+
 .titulo {
   font-weight: normal; }
+
+article {
+  background-color: #fff;
+  padding: .8em 2em 2em 2em;
+  border-radius: 0.3em; }
+
+article h2 {
+  font-weight: normal;
+  color: #33cc99; }
+
+article h6 {
+  font-weight: bold;
+  color: #737373; }
 
 /*# sourceMappingURL=site.css.map */

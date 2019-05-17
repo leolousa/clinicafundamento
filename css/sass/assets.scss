@@ -2,3 +2,32 @@
 $logo-300px: '../img/logo-fundamento@300x192.png';
 $logo-371px: '../img/logo-fundamento@371x64.png';
 $logo-64px: '../img/fundamento@64.png';
+
+$raio-botao: 0.3em;
+
+@mixin borda-arredondada {
+  -webkit-border-radius: $raio-botao;
+  -moz-border-radius: $raio-botao;
+  -o-border-radius: $raio-botao;
+  -ms-border-radius: $raio-botao;
+  border-radius: $raio-botao;
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin proporcao-responsiva($x,$y, $pseudo: false) {
+  $padding: unquote( ( $y / $x ) * 100 + '%' );
+  @if $pseudo {
+      &:before {
+          @include pseudo($pos: relative);
+          width: 100%;
+          //padding-top: $padding;
+      }
+  } @else {
+      //padding-top: $padding;
+  }
+}
