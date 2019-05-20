@@ -17,10 +17,10 @@
       <div class="logo2"></div>
       <nav class="cabecalho-nav-bar">
         <button class="menu-fechar">Fecha Menu</button>
-        <a href="terapias.html">Terapias</a>
-        <a href="paiscuidadores.html">Pais e Cuidadores</a>
-        <a href="profissionais.html">Profissionais</a>
-        <a href="contato.html">Contato</a>
+        <a href="#terapias" onclick="fechaMenu();">Terapias</a>
+        <a href="#paiscuidadores" onclick="fechaMenu();">Pais e Cuidadores</a>
+        <a href="#profissionais" onclick="fechaMenu();">Profissionais</a>
+        <a href="#contato" onclick="fechaMenu();">Contato</a>
       </nav>
     </div>
 
@@ -33,7 +33,7 @@
     </section>
     <section class="secao">
       <div class="container">
-        <h1 class="titulo">Terapias</h1>
+        <h1><a id="terapias"></a>Terapias</h1>
         <h2>Teste H2</h2>
         <h3>Teste h3</h3>
         <h4>Teste h4</h4>
@@ -44,7 +44,7 @@
     </section>
     <section class="secao">
       <div class="container">
-        <h1>Pais e Cuidadores</h1>
+        <h1><a id="paiscuidadores"></a>Pais e Cuidadores</h1>
         <article>
           <h2>Como estimular sua criança</h2>
           <h6>10/05/2019 - Flávia Spíndola F. Baiocchi</h6>
@@ -57,7 +57,7 @@
     </section>
     <section class="secao">
       <div class="container">
-        <h1>Profissionais</h1>
+        <h1><a id="profissionais"></a>Profissionais</h1>
         <ul class="conteudo-cartao">
           <li class="cartao"><a href="prof-flavia.html">Flávia</a></li>
           <li class="cartao"><a href="prof-flavia.html">Carla</a></li>
@@ -72,12 +72,7 @@
     </section>
     <section class="secao">
       <div class="container">
-        <h1>Como chegar</h1>
-      </div>
-    </section>
-    <section class="secao">
-      <div class="container">
-        <h1>Formulário</h1>
+        <h1><a id="contato"></a>Formulário</h1>
         <form class="form-contato" action="">
           <h2>Entre em contato</h2>
           <fieldset class="campos">
@@ -95,6 +90,12 @@
         </form>
       </div>
     </section>
+    <section class="secao">
+      <div class="container">
+        <h1><a id="contato"></a>Como chegar</h1>
+      </div>
+    </section>
+    <div id="map"></div>
   </main>
   <footer class="rodape">
     <div class="container">
@@ -124,5 +125,9 @@
   </footer>
   <script src="js/menu.js"></script>
   <script src="js/scrollprogress.js"></script>
+  <script src="js/googlemaps.js"></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyRRWqTJdnimsQE-bCauXMUB-akEKZgDA  &callback=initMap">
+  </script>
 </body>
 </html>

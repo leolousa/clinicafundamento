@@ -90,7 +90,6 @@
 .cartao:nth-child(4n+1) { /* Quinto filho do elemento*/
   margin-left: 0;
 }
-
 .form-contato {
   line-height: 3em;
   display: flex;
@@ -178,6 +177,7 @@
   left: 0;
   text-indent: 0;
 }
+
 @media not all and (max-width: 678px) {
   .menu-abrir,
   .menu-fechar {
@@ -287,6 +287,20 @@
     right: 0;
     background: rgba(0,0,0,0.4);
   }
+  #terapias {
+    padding-top: 120px;
+  }
+  #paiscuidadores{
+    padding-top: 120px;
+  }
+  
+  #profissionais{
+    padding-top: 120px;
+  }
+  
+  #contato{
+    padding-top: 120px;
+  }
 }
 
 /* Tablets menor que 678px */
@@ -307,6 +321,18 @@
   .logo img {
     width: 200px;
   }
+  #terapias {
+    padding-top: 250px;
+  }
+  #paiscuidadores{
+    padding-top: 250px;
+  }
+  #profissionais{
+    padding-top: 250px;
+  }
+  #contato{
+    padding-top: 250px;
+  } 
 }
 
 /* Mobile menor que 1000px */
@@ -322,5 +348,16 @@
   .cabecalho-nav-bar a {
     margin-right: 1em;
   }
-
+  #terapias {
+    padding-top: 250px;
+  }
+  #paiscuidadores{
+    padding-top: 250px;
+  }
+  #profissionais{
+    padding-top: 250px;
+  }
+  #contato{
+    padding-top: 250px;
+  }
 }

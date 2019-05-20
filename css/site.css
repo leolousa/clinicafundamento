@@ -336,7 +336,19 @@ table {
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.4); } }
+    background: rgba(0, 0, 0, 0.4); }
+
+  #terapias {
+    padding-top: 120px; }
+
+  #paiscuidadores {
+    padding-top: 120px; }
+
+  #profissionais {
+    padding-top: 120px; }
+
+  #contato {
+    padding-top: 120px; } }
 /* Tablets menor que 678px */
 @media (min-width: 678px) {
   .cabecalho {
@@ -353,7 +365,19 @@ table {
     margin-bottom: 10px; }
 
   .logo img {
-    width: 200px; } }
+    width: 200px; }
+
+  #terapias {
+    padding-top: 250px; }
+
+  #paiscuidadores {
+    padding-top: 250px; }
+
+  #profissionais {
+    padding-top: 250px; }
+
+  #contato {
+    padding-top: 250px; } }
 /* Mobile menor que 1000px */
 @media (min-width: 1000px) {
   .cabecalho .container {
@@ -365,7 +389,19 @@ table {
     flex-direction: initial; }
 
   .cabecalho-nav-bar a {
-    margin-right: 1em; } }
+    margin-right: 1em; }
+
+  #terapias {
+    padding-top: 250px; }
+
+  #paiscuidadores {
+    padding-top: 250px; }
+
+  #profissionais {
+    padding-top: 250px; }
+
+  #contato {
+    padding-top: 250px; } }
 /* FONTES*/
 /* @import url('https://fonts.googleapis.com/css?family=Raleway');*/
 /* Formatacao */
@@ -432,5 +468,10 @@ article h2 {
 article h6 {
   font-weight: bold;
   color: #737373; }
+
+#map {
+  width: 100%;
+  height: 450px;
+  background-color: grey; }
 
 /*# sourceMappingURL=site.css.map */

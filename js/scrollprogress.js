@@ -7,4 +7,3 @@ function myFunction() {
   progressbar = document.querySelector('.progress-bar');
   progressbar.style.setProperty('--progresso', scrolled);
 }
-
