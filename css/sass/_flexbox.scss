@@ -32,7 +32,7 @@
 }
 .rodape {
   background-color: $cor-fundo-rodape;
-  padding: 15px;
+  //padding: 15px;
 }
 .rodape .container {
   width: 90%;
@@ -41,11 +41,23 @@
 .rodape-navMap-list {
   display: flex;
   flex-flow: column wrap;
-  height: 240px;
+
+  align-items: center;
+  height: 155px;
+}
+.rodape-navMap-list li {
+  display: inline-block;
+  padding: 4px;
 }
 .rodape a {
   color: $cor-link-rodape;
   margin-top: 0;
+}
+.rodape p {
+  color: $cor-link-rodape;
+  font-size: .7em;
+  margin-top: 0;
+  line-height: .4em;
 }
 .rodape h4 {
   color: $cor-link-rodape;
@@ -207,6 +219,7 @@
       height: 1em;
       width: 1em;
   }
+
 }
 
 /* Celulares até 678px */
@@ -301,10 +314,17 @@
   #contato{
     padding-top: 120px;
   }
+  .rodape-navMap-list {
+    height: 400px;
+  }
+
 }
 
 /* Tablets menor que 678px */
 @media (min-width: 678px) {
+  .rodape .container {
+    width: 95%;
+  }
   .cabecalho {
     box-shadow: 0px 6px 25px 0px $cor-sombra-cartao;
     position: sticky;
@@ -332,7 +352,7 @@
   }
   #contato{
     padding-top: 250px;
-  } 
+  }
 }
 
 /* Mobile menor que 1000px */
@@ -346,7 +366,7 @@
     flex-direction: initial;
   }
   .cabecalho-nav-bar a {
-    margin-right: 1em;
+    margin-right: 2em;
   }
   #terapias {
     padding-top: 250px;
@@ -360,4 +380,8 @@
   #contato{
     padding-top: 250px;
   }
+  .rodape .container {
+    width: 90%;
+  }
+
 }

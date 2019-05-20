@@ -72,6 +72,7 @@ article {
   border-radius: $raio-botao;
 }
 article h2{
+  padding-top: 15px;
   font-weight: normal;
   color: $cor-principal-2;
 }
@@ -79,8 +80,16 @@ article h6 {
   font-weight: bold;
   color: $cor-principal-5;
 }
+article p {
+  font-family: 'helvetica', sans-serif;
+  line-height: 1.8em;
+}
 #map {
   width: 100%;
   height: 450px;
-  background-color: grey;
+  background-color: $cor-secundaria-2;
+}
+.fa-facebook,
+.fa-instagram {
+  font-size: 2em;
 }
