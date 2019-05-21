@@ -1,0 +1,46 @@
+/* 4. Grid-Layout */
+
+// 4.1 Rodapé
+
+.grid-rodape {
+  display: grid;
+  background-color: $cor-fundo-rodape;
+  color: $cor-link-rodape;
+  padding: 20px;
+  grid-template-areas: "mapa social endereco";
+  grid-template-columns: auto auto auto; //três colunas de largura automáticas
+  grid-template-rows: auto;
+}
+.grid-rodape a {
+  color: $cor-link-rodape;
+}
+.grid-rodape p {
+  color: $cor-link-rodape;
+  margin-top: 0;
+  line-height: .4em;
+}
+.grid-rodape h4 {
+  color: $cor-link-rodape;
+  font-weight: bold;
+}
+
+.box-mapa {
+  grid-area: "mapa";
+  padding: 20px 20px;
+  
+}
+
+.box-social {
+  grid-area: "social";
+  padding: 20px 20px;
+}
+.box-social li {
+  display: inline-block;
+  padding: 4px;
+}
+
+.box-endereco {
+  grid-area: "endereco";
+  padding: 20px 20px;
+
+}
