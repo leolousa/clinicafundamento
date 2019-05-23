@@ -23,23 +23,20 @@
   color: $cor-link-rodape;
   font-weight: bold;
 }
-
-.box-mapa {
+.grid-rodape__box-mapa {
   grid-area: "mapa";
   padding: 20px 20px;
   
 }
-
-.box-social {
+.grid-rodape__box-social {
   grid-area: "social";
   padding: 20px 20px;
 }
-.box-social li {
+.grid-rodape__box-social li {
   display: inline-block;
   padding: 4px;
 }
-
-.box-endereco {
+.grid-rodape__box-endereco {
   grid-area: "endereco";
   padding: 20px 20px;
 

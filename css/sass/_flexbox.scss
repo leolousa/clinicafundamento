@@ -30,12 +30,24 @@
 .cabecalho-nav-bar a:hover {
   opacity: 1;
 }
-
 .secao {
   display: flex;
   width: 100%;
   background-color: $cor-fundo-secao;
 }
+.secao .secao-blog {  
+  background-image: url($img-secao-blog);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.secao .secao-blog h1 {  
+  color: $cor-principal-3;
+}
+
+
+
+
 .secao .container {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -267,6 +279,9 @@
     right: 0;
     background: rgba(0,0,0,0.4);
   }
+  #especialidades {
+    padding-top: 120px;
+  }
   #terapias {
     padding-top: 120px;
   }
@@ -315,6 +330,9 @@
   .logo img {
     width: 200px;
   }
+  #especialidades {
+    padding-top: 250px;
+  }
   #terapias {
     padding-top: 250px;
   }
@@ -343,6 +361,9 @@
   }
   .cabecalho-nav-bar a {
     margin-right: 2em;
+  }
+  #especialidades {
+    padding-top: 250px;
   }
   #terapias {
     padding-top: 250px;

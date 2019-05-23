@@ -73,19 +73,19 @@ table {
   color: #fff;
   font-weight: bold; }
 
-.box-mapa {
+.grid-rodape__box-mapa {
   grid-area: "mapa";
   padding: 20px 20px; }
 
-.box-social {
+.grid-rodape__box-social {
   grid-area: "social";
   padding: 20px 20px; }
 
-.box-social li {
+.grid-rodape__box-social li {
   display: inline-block;
   padding: 4px; }
 
-.box-endereco {
+.grid-rodape__box-endereco {
   grid-area: "endereco";
   padding: 20px 20px; }
 
@@ -125,6 +125,15 @@ table {
   display: flex;
   width: 100%;
   background-color: #F2F5F7; }
+
+.secao .secao-blog {
+  background-image: url("../img/img3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.secao .secao-blog h1 {
+  color: #ff6600; }
 
 .secao .container {
   margin-top: 60px;
@@ -352,6 +361,9 @@ table {
     right: 0;
     background: rgba(0, 0, 0, 0.4); }
 
+  #especialidades {
+    padding-top: 120px; }
+
   #terapias {
     padding-top: 120px; }
 
@@ -393,6 +405,9 @@ table {
   .logo img {
     width: 200px; }
 
+  #especialidades {
+    padding-top: 250px; }
+
   #terapias {
     padding-top: 250px; }
 
@@ -416,6 +431,9 @@ table {
 
   .cabecalho-nav-bar a {
     margin-right: 2em; }
+
+  #especialidades {
+    padding-top: 250px; }
 
   #terapias {
     padding-top: 250px; }
