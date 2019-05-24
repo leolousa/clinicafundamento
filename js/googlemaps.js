@@ -1,3 +1,4 @@
+// GOOGLE MAPS
 // Initialize and add the map
 function initMap() {
   // A localização da Clínica -15.831523, -48.017480

@@ -2,12 +2,44 @@
 /* ESTILO GERAL */
 /* 1. Cores */
 /* 2. Assets */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
+.btn-inicio {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out; }
+
+.btn-inicio button {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: #e3b4f4;
+  border: none;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+  font-size: 24px;
+  color: white;
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out; }
+
+.btn-inicio button.main {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #e3b4f4;
+  right: 0;
+  bottom: 0;
+  z-index: 999; }
+
 /* 3. RESET
    http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -107,10 +139,11 @@ table {
   background-color: #fff; }
 
 .cabecalho-nav-bar {
-  font-weight: normal; }
+  font-weight: normal;
+  flex-direction: column;
+  font-size: 1.0em; }
 
 .cabecalho-nav-bar a {
-  font-size: 1.2em;
   opacity: .8;
   line-height: 1;
   text-decoration: none;
@@ -127,7 +160,6 @@ table {
   background-color: #F2F5F7; }
 
 .secao .secao-blog {
-  background-image: url("../img/img3.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
@@ -197,6 +229,9 @@ table {
   color: #fff;
   cursor: pointer; }
 
+.agendar {
+  width: 50%; }
+
 .logo {
   display: block;
   width: 300px;
@@ -261,6 +296,9 @@ table {
   left: 0;
   text-indent: 0; }
 
+.link-inicio {
+  position: sticky; }
+
 @media not all and (max-width: 678px) {
   .menu-abrir,
   .menu-fechar {
@@ -290,11 +328,34 @@ table {
     width: 1em; } }
 /* Celulares at├® 678px */
 @media (max-width: 678px) {
+  .btn-inicio {
+    display: none; }
+
   .cabecalho {
     position: sticky;
     box-shadow: 0px 1px 15px 0px #CCC;
     top: 0px;
     z-index: 999; }
+
+  .cabecalho-nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background: #fff;
+    padding: 1em;
+    margin: 0;
+    height: 100%;
+    width: 90%;
+    max-width: 320px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -90%;
+    transition: left 0.3s ease-out; }
+
+  .cabecalho-nav-bar a {
+    margin-top: 20px;
+    margin-bottom: 20px; }
 
   .conteudo-cartao {
     flex-direction: column;
@@ -324,29 +385,6 @@ table {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
-
-  .logo img {
-    width: 180px; }
-
-  .cabecalho-nav-bar {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    background: #fff;
-    padding: 1em;
-    margin: 0;
-    height: 100%;
-    width: 90%;
-    max-width: 320px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: -90%;
-    transition: left 0.3s ease-out; }
-
-  .cabecalho-nav-bar a {
-    margin-top: 20px;
-    margin-bottom: 20px; }
 
   .menu-ativo .cabecalho-nav-bar {
     left: 0; }
@@ -420,13 +458,17 @@ table {
   #contato {
     padding-top: 250px; } }
 /* Mobile menor que 1000px */
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
+  .cabecalho-nav-bar {
+    flex-direction: initial;
+    font-size: 1.0em; } }
+/* No m├¡nimo 1550px */
+@media (min-width: 1550px) {
   .cabecalho .container {
     justify-content: space-between;
-    font-size: 1em; }
+    font-size: 1.2em; }
 
   .cabecalho-nav-bar {
-    display: flex;
     flex-direction: initial; }
 
   .cabecalho-nav-bar a {

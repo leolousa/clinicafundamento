@@ -1,0 +1,35 @@
+//Botão flutuante
+.btn-inicio{
+  position: fixed;
+  bottom:20px;
+  right:40px;
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+.btn-inicio button{
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: $cor-secundaria-1;
+  border: none;
+  box-shadow: 0 1px 5px rgba(0,0,0,.4);
+  font-size: 24px;
+  color: white;
+    
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+
+.btn-inicio button.main{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: $cor-secundaria-1;
+  right: 0;
+  bottom: 0;
+  z-index: $indice-999;
+}
