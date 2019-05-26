@@ -159,14 +159,6 @@ table {
   width: 100%;
   background-color: #F2F5F7; }
 
-.secao .secao-blog {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
-
-.secao .secao-blog h1 {
-  color: #ff6600; }
-
 .secao .container {
   margin-top: 60px;
   margin-bottom: 60px; }
@@ -184,13 +176,22 @@ table {
 
 .cartao {
   background-color: #fff;
-  height: 100px;
-  width: 23%;
-  text-align: center;
+  height: 100%;
+  width: 45%;
   margin: 1%;
   transition: .3s;
   box-shadow: 1px 1px 1px #CCC;
   position: relative; }
+
+.cartao-titulo {
+  text-align: center; }
+
+.cartao-subtitulo {
+  text-align: center;
+  font-size: .8em; }
+
+.cartao-conteudo {
+  margin: 4%; }
 
 .cartao:nth-child(4n) {
   /* Quarto filho do elemento*/
@@ -214,7 +215,7 @@ table {
 
 .form-contato-botao {
   margin-top: 1em;
-  background: #33cc99;
+  background-color: #33cc99;
   border: 0;
   padding: .6em;
   font-size: 1.2em;
@@ -229,18 +230,12 @@ table {
   color: #fff;
   cursor: pointer; }
 
-.agendar {
-  width: 50%; }
-
 .logo {
   display: block;
   width: 300px;
   height: 192px;
   transform: scale(0.7);
-  background-image: url("../img/logo-fundamento@300x192.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; }
+  background: url("../img/logo-fundamento@300x192.png") center/cover no-repeat; }
 
 .logo img {
   max-width: 400px;
@@ -296,8 +291,11 @@ table {
   left: 0;
   text-indent: 0; }
 
-.link-inicio {
-  position: sticky; }
+.assinatura {
+  background-color: #e3b4f4;
+  text-align: center;
+  font-weight: bold;
+  font-size: .8em; }
 
 @media not all and (max-width: 678px) {
   .menu-abrir,
@@ -357,14 +355,14 @@ table {
     margin-top: 20px;
     margin-bottom: 20px; }
 
-  .conteudo-cartao {
-    flex-direction: column;
-    justify-content: end; }
-
   .cartao {
     width: auto;
     min-height: 350px;
     margin-bottom: 20px; }
+
+  .conteudo-cartao {
+    flex-direction: column;
+    justify-content: end; }
 
   .secao-rodape {
     height: auto; }
@@ -372,19 +370,14 @@ table {
   .logo {
     height: 80px;
     transform: scale(0.4);
-    background-image: url("../img/fundamento@64.png");
-    background-repeat: no-repeat;
-    background-position: center; }
+    background: url("../img/fundamento@64.png") center/cover no-repeat; }
 
   .logo2 {
     display: block;
     transform: scale(0.5);
     width: 90em;
     height: 80px;
-    background-image: url("../img/logo-fundamento@371x64.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
+    background: url("../img/logo-fundamento@371x64.png") center/cover no-repeat; }
 
   .menu-ativo .cabecalho-nav-bar {
     left: 0; }
@@ -552,7 +545,6 @@ article {
 
 article h2 {
   padding-top: 15px;
-  font-weight: normal;
   color: #33cc99; }
 
 article h6 {

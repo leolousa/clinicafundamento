@@ -37,17 +37,6 @@
   width: 100%;
   background-color: $cor-fundo-secao;
 }
-.secao .secao-blog {  
-  //background-image: url($img-secao-blog);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.secao .secao-blog h1 {  
-  color: $cor-principal-3;
-}
-
-
 .secao .container {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -68,14 +57,24 @@
 }
 .cartao {
 	background-color: $cor-fundo-cartao;
-  height: 100px;
-  width: 23%;
-	text-align: center;
+  height: 100%;
+  width: 45%;
 	margin: 1%;
 	transition: .3s;
 	box-shadow: 1px 1px 1px $cor-sombra-cartao;
 	position: relative;
 }
+.cartao-titulo {
+  text-align: center;
+}
+.cartao-subtitulo {
+  text-align: center;
+  font-size: .8em;
+}
+.cartao-conteudo {
+  margin: 4%;
+}
+
 .cartao:nth-child(4n) { /* Quarto filho do elemento*/
   margin-right: 0;
 }
@@ -96,7 +95,7 @@
 }
 .form-contato-botao {
   margin-top: 1em;
-	background: $cor-principal-2;
+	background-color: $cor-principal-2;
   border: 0;
   padding: .6em;
   font-size: 1.2em;
@@ -107,18 +106,13 @@
 	color: $cor-link-rodape;
 	cursor: pointer;
 }
-.agendar {
-  width: 50%;
-}
 .logo {
   display: block;
   width: 300px;
   height: 192px;
   transform: scale(0.7);
-  background-image: url($logo-300px);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url($logo-300px) center / cover no-repeat;
+
 }
 .logo img {
   max-width: 400px;
@@ -174,8 +168,12 @@
   left: 0;
   text-indent: 0;
 }
-.link-inicio {
-  position: sticky;
+
+.assinatura {
+  background-color: $cor-secundaria-1;
+  text-align: center;
+  font-weight: bold;
+  font-size: .8em;
 }
 
 
@@ -244,14 +242,14 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .conteudo-cartao {
-    flex-direction: column;
-    justify-content: end;
-  }
   .cartao {
     width: auto;
     min-height: 350px;
     margin-bottom: 20px;
+  }
+  .conteudo-cartao {
+    flex-direction: column;
+    justify-content: end;
   }
   .secao-rodape {
     height: auto;
@@ -260,19 +258,14 @@
     //width: 72px;
     height: 80px;
     transform: scale(0.4);
-    background-image: url($logo-64px);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url($logo-64px) center / cover no-repeat;
   }
   .logo2 {
     display: block;
     transform: scale(.5);
     width: 90em;
     height: 80px;
-    background-image: url($logo-371px);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url($logo-371px) center / cover no-repeat;
   }
 
   .menu-ativo .cabecalho-nav-bar {

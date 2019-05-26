@@ -1,0 +1,21 @@
+.profissionais__conteudo {
+  display: flex;
+  background-color: $cor-fundo-conteudo-cartao;
+  flex-wrap: wrap;
+}
+.profissionais__cartao {
+	background-color: $cor-fundo-cartao;
+  height: 100px;
+  width: 23%;
+	text-align: center;
+	margin: 1%;
+	transition: .3s;
+	box-shadow: 1px 1px 1px $cor-sombra-cartao;
+	position: relative;
+}
+.profissionais__cartao:nth-child(4n) { /* Quarto filho do elemento*/
+  margin-right: 0;
+}
+.profissionais__cartao:nth-child(4n+1) { /* Quinto filho do elemento*/
+  margin-left: 0;
+}
