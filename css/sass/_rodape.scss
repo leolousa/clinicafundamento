@@ -1,43 +1,42 @@
-/* 4. Grid-Layout */
-
-// 4.1 Rodapé
+// Grid do rodapé
 
 .grid-rodape {
   display: grid;
   background-color: $cor-fundo-rodape;
   color: $cor-link-rodape;
-  padding: 20px;
+  padding: .5em;
   grid-template-areas: "mapa social endereco";
-  grid-template-columns: auto auto auto; //três colunas de largura automáticas
+  grid-template-columns: 33.33% 33.33% 33.33%; //três colunas de largura automáticas
   grid-template-rows: auto;
 }
+
 .grid-rodape a {
   color: $cor-link-rodape;
 }
 .grid-rodape p {
   color: $cor-link-rodape;
-  margin-top: 0;
-  line-height: .4em;
+  margin: .5em;
+  line-height: 1em;
 }
-.grid-rodape h4 {
+.grid-rodape h3 {
   color: $cor-link-rodape;
   font-weight: bold;
 }
 .grid-rodape__box-mapa {
-  grid-area: "mapa";
-  padding: 20px 20px;
+  grid-area: mapa;
+  padding: 1em 1em;
   
 }
 .grid-rodape__box-social {
-  grid-area: "social";
-  padding: 20px 20px;
+  grid-area: social;
+  padding: 1em 1em;
 }
-.grid-rodape__box-social li {
+.grid-rodape__box-social li { 
   display: inline-block;
   padding: 4px;
 }
 .grid-rodape__box-endereco {
-  grid-area: "endereco";
-  padding: 20px 20px;
+  grid-area: endereco;
+  padding: 1em 1em;
 
 }

@@ -1,0 +1,42 @@
+/* ESTILO GERAL */
+
+@import 'cores';
+
+@import 'variaveis';
+
+@import 'mixins';
+
+@import 'normalize';
+
+@import 'reset';
+
+@import 'components';
+
+@import 'layout';
+
+@import 'cabecalho';
+
+@import 'conteudo';
+
+  @import 'front';
+
+  @import 'especialidades';
+
+  @import 'terapias';
+  
+  @import 'profissionais';
+
+  @import 'paisecuidadores';
+
+  @import 'contato';
+
+  @import 'comochegar';
+
+
+@import 'rodape';
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Raleway');*/
+@import url($url-fonte-site);
+
+

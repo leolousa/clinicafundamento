@@ -1,8 +1,4 @@
-/* 3. RESET
-   http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* Reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -45,4 +41,71 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+p {
+  margin: 1em 0;
+  line-height: 1.5em;
+}
+h1 {
+  margin: 1em 0 .8em;
+  font-size: 2.8em;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 1.9em;
+}
+h3 {
+  margin: 1em 0;
+  font-size: 1.5em;
+}
+h4 {
+  margin: 1em 0;
+  font-size: 1.2em;
+}
+h5 {
+  margin: 1em 0;
+  font-size: 1em;
+}
+h6 {
+  margin: 1em 0;
+  font-size: .8em;
+}
+ol, ul {
+  list-style: none;
+}
+img{
+  max-width: 100%;
+}
+a {
+  line-height: 1.5em;
+  text-decoration: none;
+}
+input {
+  width: 100%;
+}
+.titulo {
+  font-weight: normal;
+}
+article {
+  background-color: $cor-fundo-artigo;
+  padding: 4em;
+  border-radius: $raio-botao;
+}
+article h2{
+  font-family: $fonte-site;
+  margin: 1em 0 .5em;
+  color: $cor-principal-2;
+}
+article h6 {
+  font-weight: bold;
+  color: $cor-principal-5;
+}
+article p {
+  font-family: $fonte-artigo;
+  line-height: 1.8em;
+}
+
+.fa-facebook,
+.fa-instagram {
+  font-size: 2em;
 }

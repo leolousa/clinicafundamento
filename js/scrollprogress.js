@@ -10,6 +10,7 @@ function myFunction() {
   progressbar.style.setProperty('--progresso', scrolled);
   if (scroll = null || scrolled < 5) {
     btnInicio.style.setProperty('display', 'none');
+
   } else {
     btnInicio.style.setProperty('display', 'block');
   }

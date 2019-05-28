@@ -1,0 +1,27 @@
+
+.grid-cabecalho {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $cor-fundo-container;
+}
+
+.cabecalho-nav-bar {
+  font-weight: normal;
+  flex-direction: column;
+  font-size: 1.0em;
+}
+.cabecalho-nav-bar a {
+
+  opacity: .8;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 2em;
+  color: $cor-principal-3;
+}
+.cabecalho-nav-bar a:hover {
+  opacity: 1;
+}

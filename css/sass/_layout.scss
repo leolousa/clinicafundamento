@@ -1,0 +1,40 @@
+// LAYOUT
+
+.app {
+  background: $cor-fundo-pagina;
+  font-family: $fonte-site;
+  display: grid;
+  grid-template-areas:
+      "cabecalho"
+      "conteudo"
+      "rodape";
+  grid-template-columns: auto;
+  grid-template-rows: 150px auto auto;
+}
+
+.cabecalho {
+  grid-area: cabecalho;
+  background-color: $cor-fundo-cabecalho;
+  position: sticky;
+  box-shadow: 0px 1px 15px 0px $cor-sombra-cartao;
+  top: 0px;
+  z-index: $indice-999;
+}
+
+.conteudo {
+  grid-area: conteudo;
+}
+
+.rodape {
+  background: $cor-fundo-rodape;
+  color: $cor-link-rodape;
+  grid-area: rodape;
+  padding: 1rem;
+}
+
+.assinatura {
+  background-color: $cor-secundaria-1;
+  text-align: center;
+  font-weight: bold;
+  font-size: .8em;
+}

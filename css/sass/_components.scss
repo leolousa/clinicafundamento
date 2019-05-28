@@ -1,5 +1,5 @@
 //Botão flutuante
-.btn-inicio{
+.btn-inicio {
   position: fixed;
   bottom:20px;
   right:40px;
@@ -7,7 +7,7 @@
   -moz-transition: .2s ease-out;
   transition: .2s ease-out;
 }
-.btn-inicio button{
+.btn-inicio button {
   cursor: pointer;
   width: 48px;
   height: 48px;
@@ -23,7 +23,7 @@
   transition: .2s ease-out;
 }
 
-.btn-inicio button.main{
+.btn-inicio button.main {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -32,4 +32,62 @@
   right: 0;
   bottom: 0;
   z-index: $indice-999;
+}
+
+// Barra de progresso
+.progress-bar {
+  --progresso: 0;
+  height: 2px;
+  padding: 0px;
+  background-color: $cor-fundo-cabecalho;
+  display: flex;
+}
+.progress-bar::before {
+  content: "";
+  width: calc(var(--progresso) * 1%);
+  background-color: $cor-principal-1; //hsl( calc(var(--progresso) * 1.2) , 80%, 50%); // Arco-iris
+  transition: all 0.2s ease;
+}
+
+// Menu
+.menu-abrir,
+.menu-fechar {
+  background: none;
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  font-size: 1.6em;
+  text-indent: -999em;
+  cursor: pointer;
+}
+.menu-abrir {
+  height: 0;
+  width:.75em;
+  padding-top:.100em;
+  border-top: .375em double $cor-principal-1;
+  border-bottom: .125em solid $cor-principal-1;
+  vertical-align: middle;
+  margin: 0.2em;    
+}
+.menu-fechar {
+    position: relative;
+    height: 1.8em;
+    width: 1em;
+}
+.menu-fechar:before {
+  content: '\00D7';
+  position: absolute;
+  color: $cor-principal-1;
+  font-size: 1.4em;
+  top: 0;
+  bottom: 10px;
+  left: 0;
+  text-indent: 0;
+}
+
+// Google Maps
+#map {
+  width: 100%;
+  height: 600px;
+  background-color: $cor-secundaria-2;
 }
