@@ -1,20 +1,20 @@
 
-.grid-cabecalho {
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.cabecalho__grid-cabecalho {
   background-color: $cor-fundo-container;
+  display: grid;
+  align-items: center;
+  grid-template-areas: "logo navbar";
+  grid-template-columns: 20% 80%;
 }
 
-.cabecalho-nav-bar {
+.cabecalho__nav-bar {
+  grid-area: navbar;
   font-weight: normal;
   flex-direction: column;
-  font-size: 1.0em;
+  font-size: 1em;
+  text-align: right;
 }
-.cabecalho-nav-bar a {
-
+.cabecalho__nav-bar a {
   opacity: .8;
   line-height: 1;
   text-decoration: none;
@@ -22,6 +22,88 @@
   margin-right: 2em;
   color: $cor-principal-3;
 }
-.cabecalho-nav-bar a:hover {
+.cabecalho__nav-bar a:hover {
   opacity: 1;
 }
+
+// Barra de progresso
+.cabecalho__progress-bar {
+  --progresso: 0;
+  height: 2px;
+  padding: 0px;
+  background-color: $cor-fundo-cabecalho;
+  display: flex;
+}
+.cabecalho__progress-bar::before {
+  content: "";
+  width: calc(var(--progresso) * 1%);
+  background-color: $cor-principal-1; //hsl( calc(var(--progresso) * 1.2) , 80%, 50%); // Arco-iris
+  transition: all 0.2s ease;
+}
+
+.cabecalho__logo-grande {
+  transform: scale(0.8);
+}
+.cabecalho__logo-medio {
+  display: none;
+}
+.cabecalho__logo-pequeno {
+  display: none;
+}
+
+// Menu
+.cabecalho__menu-abrir,
+.cabecalho__menu-fechar {
+  //display: none;
+  background: none;
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  font-size: 1.6em;
+  text-indent: -999em;
+  cursor: pointer;
+}
+.cabecalho__menu-abrir {
+  grid-area: btn-menu;
+  height: 0;
+  width:.75em;
+  padding-top:.100em;
+  border-top: .375em double $cor-principal-1;
+  border-bottom: .125em solid $cor-principal-1;
+  vertical-align: middle;
+  margin: 0.2em;    
+}
+.cabecalho__menu-fechar {
+    position: relative;
+    height: 1.8em;
+    width: 1em;
+}
+.cabecalho__menu-fechar:before {
+  content: '\00D7';
+  position: absolute;
+  color: $cor-principal-1;
+  font-size: 1.4em;
+  top: 0;
+  bottom: 10px;
+  left: 0;
+  text-indent: 0;
+}
+
+
+.menu-ativo .cabecalho__nav-bar {
+  left: 0;
+}
+
+.menu-ativo:after {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+
+  

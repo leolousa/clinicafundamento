@@ -1,0 +1,102 @@
+// Responsividade do site
+
+// Telas maiores que 0px - CELULARES
+@media screen and (min-width: 0) {
+  .cabecalho__grid-cabecalho {
+    grid-template-areas: "menu logo-medio";
+    grid-template-columns: 10% 90%;
+  }
+  .cabecalho__nav-bar {
+    display: none;
+  }
+  .cabecalho__menu-abrir {
+    grid-area: menu;
+    margin-left: 20px;
+  }
+  .cabecalho__menu-abrir,
+  .cabecalho__menu-fechar {
+    display: block;
+  }
+  .cabecalho__logo-grande {
+    display: none;
+  }
+
+  .cabecalho__logo-medio {
+    grid-area: logo-medio;
+    transform: scale(0.8);
+    justify-items: start;
+    display: block;
+  }
+}
+
+// Telas maiores que 768px - TABLETS
+@media screen and (min-width: 768px) {
+  .cabecalho__grid-cabecalho {
+    grid-template-areas: "menu logo-medio";
+    grid-template-columns: 10% 90%;
+  }
+  .cabecalho__menu-abrir {
+    grid-area: menu;
+    margin-left: 20px;
+  }
+  .cabecalho__menu-abrir,
+  .cabecalho__menu-fechar {
+    display: block;
+  }
+  .cabecalho__logo-grande {
+    display: none;
+  }
+  .cabecalho__logo-medio {
+    grid-area: logo-medio;
+    transform: scale(0.8);
+    display: block;
+  }
+    .menu-ativo .barra-nav {
+      left: 0;
+  }
+
+}
+
+// Telas maiores que 992px - DESKTOPS
+@media screen and (min-width: 992px) {
+  .cabecalho__grid-cabecalho {
+    grid-template-areas: "logo navbar";
+    grid-template-columns: 20% 80%;
+  }
+  .cabecalho__nav-bar {
+    display: block;
+    font-size: 1em;
+  }
+  .cabecalho__menu-abrir,
+  .cabecalho__menu-fechar {
+    display: none;
+  }
+  .cabecalho__logo-grande {
+    display: block;
+  }
+}
+
+// Telas maiores que 1200px - DESKTOPS NOVOS E TVS
+@media screen and (min-width: 1200px) {
+  .cabecalho__grid-cabecalho {
+    grid-template-areas: "logo navbar";
+    grid-template-columns: 20% 80%;
+  }
+  .cabecalho__nav-bar {
+    display: block;
+    font-size: 1.2em;
+  }
+  .cabecalho__menu-abrir,
+  .cabecalho__menu-fechar {
+    display: none;
+  }
+  .cabecalho__logo-grande {
+    display: block;
+  }
+  .cabecalho__logo-pequeno {
+    display: none;
+  }
+  .cabecalho__logo-medio {
+    display: none;
+  }
+}

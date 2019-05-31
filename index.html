@@ -12,13 +12,13 @@
 </head>
 <body class="app">
   <header class="cabecalho">
-    <div class="progress-bar"></div>
-    <div class="grid-cabecalho">
-      <button class="menu-abrir">Abre Menu</button>
-      <div class="logo"></div>
-      <div class="logo2"></div>
-      <nav class="cabecalho-nav-bar">
-        <button class="menu-fechar">Fecha Menu</button>
+    <div class="cabecalho__progress-bar"></div>
+    <div class="cabecalho__grid-cabecalho">
+      <button class="cabecalho__menu-abrir">Abre Menu</button>
+      <img class="cabecalho__logo-grande" src="img/logo-fundamento@300x192.png">
+      <img class="cabecalho__logo-medio" src="img/logo-fundamento@368x70.png">
+      <nav class="cabecalho__nav-bar">
+        <button class="cabecalho__menu-fechar">Fecha Menu</button>
         <a href="#especialidades" onclick="fechaMenu();" class="scroll-suave">Especialidades</a>
         <a href="#terapias" onclick="fechaMenu();" class="scroll-suave">Terapias</a>
         <a href="#profissionais" onclick="fechaMenu();" class="scroll-suave">Profissionais</a>
@@ -161,16 +161,17 @@
       </div>
     </section>
     <section class="comochegar">
-      <h1><a id="contato" class="scroll-suave"></a>Como chegar</h1>
+      <h1>Como chegar</h1>
     </section>
     <div class="btn-inicio"  ontouchstart="">
         <a href="#inicio" class="scroll-suave"><button class="main" title="Início"><i class="fas fa-angle-up"></i></button></a>
     </div>
     <div id="map"></div>
   </main>
+
   <footer class="rodape">
-    <div class="grid-rodape">
-      <div class="grid-rodape__box-mapa">
+    <div class="rodape__grid-rodape">
+      <div class="rodape__grid-rodape__box-mapa">
         <h3>Mapa do site</h3>
         <ul>
           <li><a href="#especialidades" class="scroll-suave">Especialidades</a></li>
@@ -180,14 +181,14 @@
           <li><a href="#contato" class="scroll-suave">Contato</a></li>
         </ul>
       </div>
-      <div class="grid-rodape__box-social">
+      <div class="rodape__grid-rodape__box-social">
         <h3>Redes sociais</h3>
         <ul>
           <li><a href="https://www.facebook.com/clinicafundamento/" target="_blank"><i class="fab fa-facebook" title="Nosso Facebook"></i></a></li>
           <li><a href="https://www.instagram.com/clinicafundamento/" target="_blank" title="Nosso Instagram"><i class="fab fa-instagram" title="Instagram"></i></a></li>
         </ul>
       </div>
-      <div class="grid-rodape__box-endereco">
+      <div class="rodape__grid-rodape__box-endereco">
         <h3>Endereço</h3>
         <p>Rua das Carnaúbas Lote 04 Sala 202</p>
         <p>PLAZA MALL - Águas Claras</p>
@@ -197,6 +198,7 @@
       </div>
     </div>
   </footer>
+  
   <div class="assinatura">
     Criado por <a href="http://www.baiocchilousa.com.br" target="_blank">Baiocchi&Lousa 2019 &copy;</a>
   </div>

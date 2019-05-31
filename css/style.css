@@ -419,6 +419,13 @@ article p {
 .fa-instagram {
   font-size: 2em; }
 
+#especialidades,
+#terapias,
+#profissionais,
+#paiscuidadores,
+#contato {
+  padding-top: 240px; }
+
 .btn-inicio {
   position: fixed;
   bottom: 20px;
@@ -451,53 +458,6 @@ article p {
   bottom: 0;
   z-index: 999; }
 
-.progress-bar {
-  --progresso: 0;
-  height: 2px;
-  padding: 0px;
-  background-color: #fff;
-  display: flex; }
-
-.progress-bar::before {
-  content: "";
-  width: calc(var(--progresso) * 1%);
-  background-color: #9900cc;
-  transition: all 0.2s ease; }
-
-.menu-abrir,
-.menu-fechar {
-  background: none;
-  border: 0;
-  outline: 0;
-  -webkit-appearance: none;
-  font-size: 1.6em;
-  text-indent: -999em;
-  cursor: pointer; }
-
-.menu-abrir {
-  height: 0;
-  width: .75em;
-  padding-top: .100em;
-  border-top: 0.375em double #9900cc;
-  border-bottom: 0.125em solid #9900cc;
-  vertical-align: middle;
-  margin: 0.2em; }
-
-.menu-fechar {
-  position: relative;
-  height: 1.8em;
-  width: 1em; }
-
-.menu-fechar:before {
-  content: '\00D7';
-  position: absolute;
-  color: #9900cc;
-  font-size: 1.4em;
-  top: 0;
-  bottom: 10px;
-  left: 0;
-  text-indent: 0; }
-
 #map {
   width: 100%;
   height: 600px;
@@ -509,7 +469,7 @@ article p {
   display: grid;
   grid-template-areas: "cabecalho" "conteudo" "rodape";
   grid-template-columns: auto;
-  grid-template-rows: 150px auto auto; }
+  grid-template-rows: auto auto auto; }
 
 .cabecalho {
   grid-area: cabecalho;
@@ -531,23 +491,26 @@ article p {
 .assinatura {
   background-color: #e3b4f4;
   text-align: center;
+  vertical-align: middle;
   font-weight: bold;
-  font-size: .8em; }
+  font-size: .8em;
+  height: 2em; }
 
-.grid-cabecalho {
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.cabecalho__grid-cabecalho {
+  background-color: #fff;
+  display: grid;
   align-items: center;
-  background-color: #fff; }
+  grid-template-areas: "logo navbar";
+  grid-template-columns: 20% 80%; }
 
-.cabecalho-nav-bar {
+.cabecalho__nav-bar {
+  grid-area: navbar;
   font-weight: normal;
   flex-direction: column;
-  font-size: 1.0em; }
+  font-size: 1em;
+  text-align: right; }
 
-.cabecalho-nav-bar a {
+.cabecalho__nav-bar a {
   opacity: .8;
   line-height: 1;
   text-decoration: none;
@@ -555,8 +518,78 @@ article p {
   margin-right: 2em;
   color: #ff6600; }
 
-.cabecalho-nav-bar a:hover {
+.cabecalho__nav-bar a:hover {
   opacity: 1; }
+
+.cabecalho__progress-bar {
+  --progresso: 0;
+  height: 2px;
+  padding: 0px;
+  background-color: #fff;
+  display: flex; }
+
+.cabecalho__progress-bar::before {
+  content: "";
+  width: calc(var(--progresso) * 1%);
+  background-color: #9900cc;
+  transition: all 0.2s ease; }
+
+.cabecalho__logo-grande {
+  transform: scale(0.8); }
+
+.cabecalho__logo-medio {
+  display: none; }
+
+.cabecalho__logo-pequeno {
+  display: none; }
+
+.cabecalho__menu-abrir,
+.cabecalho__menu-fechar {
+  background: none;
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  font-size: 1.6em;
+  text-indent: -999em;
+  cursor: pointer; }
+
+.cabecalho__menu-abrir {
+  grid-area: btn-menu;
+  height: 0;
+  width: .75em;
+  padding-top: .100em;
+  border-top: 0.375em double #9900cc;
+  border-bottom: 0.125em solid #9900cc;
+  vertical-align: middle;
+  margin: 0.2em; }
+
+.cabecalho__menu-fechar {
+  position: relative;
+  height: 1.8em;
+  width: 1em; }
+
+.cabecalho__menu-fechar:before {
+  content: '\00D7';
+  position: absolute;
+  color: #9900cc;
+  font-size: 1.4em;
+  top: 0;
+  bottom: 10px;
+  left: 0;
+  text-indent: 0; }
+
+.menu-ativo .cabecalho__nav-bar {
+  left: 0; }
+
+.menu-ativo:after {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4); }
 
 .especialidades {
   padding: 4em; }
@@ -599,7 +632,7 @@ article p {
 .comochegar {
   padding: 4em; }
 
-.grid-rodape {
+.rodape__grid-rodape {
   display: grid;
   background-color: #9900cc;
   color: #fff;
@@ -608,34 +641,117 @@ article p {
   grid-template-columns: 33.33% 33.33% 33.33%;
   grid-template-rows: auto; }
 
-.grid-rodape a {
+.rodape__grid-rodape a {
   color: #fff; }
 
-.grid-rodape p {
+.rodape__grid-rodape p {
   color: #fff;
   margin: .5em;
   line-height: 1em; }
 
-.grid-rodape h3 {
+.rodape__grid-rodape h3 {
   color: #fff;
   font-weight: bold; }
 
-.grid-rodape__box-mapa {
+.rodape__grid-rodape__box-mapa {
   grid-area: mapa;
   padding: 1em 1em; }
 
-.grid-rodape__box-social {
+.rodape__grid-rodape__box-social {
   grid-area: social;
   padding: 1em 1em; }
 
-.grid-rodape__box-social li {
+.rodape__grid-rodape__box-social li {
   display: inline-block;
   padding: 4px; }
 
-.grid-rodape__box-endereco {
+.rodape__grid-rodape__box-endereco {
   grid-area: endereco;
   padding: 1em 1em; }
 
+@media screen and (min-width: 0) {
+  .cabecalho__grid-cabecalho {
+    grid-template-areas: "menu logo-medio";
+    grid-template-columns: 10% 90%; }
+
+  .cabecalho__nav-bar {
+    display: none; }
+
+  .cabecalho__menu-abrir {
+    grid-area: menu;
+    margin-left: 20px; }
+
+  .cabecalho__menu-abrir,
+  .cabecalho__menu-fechar {
+    display: block; }
+
+  .cabecalho__logo-grande {
+    display: none; }
+
+  .cabecalho__logo-medio {
+    grid-area: logo-medio;
+    transform: scale(0.8);
+    justify-items: start;
+    display: block; } }
+@media screen and (min-width: 768px) {
+  .cabecalho__grid-cabecalho {
+    grid-template-areas: "menu logo-medio";
+    grid-template-columns: 10% 90%; }
+
+  .cabecalho__menu-abrir {
+    grid-area: menu;
+    margin-left: 20px; }
+
+  .cabecalho__menu-abrir,
+  .cabecalho__menu-fechar {
+    display: block; }
+
+  .cabecalho__logo-grande {
+    display: none; }
+
+  .cabecalho__logo-medio {
+    grid-area: logo-medio;
+    transform: scale(0.8);
+    display: block; }
+
+  .menu-ativo .barra-nav {
+    left: 0; } }
+@media screen and (min-width: 992px) {
+  .cabecalho__grid-cabecalho {
+    grid-template-areas: "logo navbar";
+    grid-template-columns: 20% 80%; }
+
+  .cabecalho__nav-bar {
+    display: block;
+    font-size: 1em; }
+
+  .cabecalho__menu-abrir,
+  .cabecalho__menu-fechar {
+    display: none; }
+
+  .cabecalho__logo-grande {
+    display: block; } }
+@media screen and (min-width: 1200px) {
+  .cabecalho__grid-cabecalho {
+    grid-template-areas: "logo navbar";
+    grid-template-columns: 20% 80%; }
+
+  .cabecalho__nav-bar {
+    display: block;
+    font-size: 1.2em; }
+
+  .cabecalho__menu-abrir,
+  .cabecalho__menu-fechar {
+    display: none; }
+
+  .cabecalho__logo-grande {
+    display: block; }
+
+  .cabecalho__logo-pequeno {
+    display: none; }
+
+  .cabecalho__logo-medio {
+    display: none; } }
 /* @import url('https://fonts.googleapis.com/css?family=Raleway');*/
 
 /*# sourceMappingURL=style.css.map */

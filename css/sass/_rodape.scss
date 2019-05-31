@@ -1,6 +1,6 @@
 // Grid do rodapé
 
-.grid-rodape {
+.rodape__grid-rodape {
   display: grid;
   background-color: $cor-fundo-rodape;
   color: $cor-link-rodape;
@@ -10,32 +10,32 @@
   grid-template-rows: auto;
 }
 
-.grid-rodape a {
+.rodape__grid-rodape a {
   color: $cor-link-rodape;
 }
-.grid-rodape p {
+.rodape__grid-rodape p {
   color: $cor-link-rodape;
   margin: .5em;
   line-height: 1em;
 }
-.grid-rodape h3 {
+.rodape__grid-rodape h3 {
   color: $cor-link-rodape;
   font-weight: bold;
 }
-.grid-rodape__box-mapa {
+.rodape__grid-rodape__box-mapa {
   grid-area: mapa;
   padding: 1em 1em;
   
 }
-.grid-rodape__box-social {
+.rodape__grid-rodape__box-social {
   grid-area: social;
   padding: 1em 1em;
 }
-.grid-rodape__box-social li { 
+.rodape__grid-rodape__box-social li { 
   display: inline-block;
   padding: 4px;
 }
-.grid-rodape__box-endereco {
+.rodape__grid-rodape__box-endereco {
   grid-area: endereco;
   padding: 1em 1em;
 
