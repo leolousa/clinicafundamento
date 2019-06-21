@@ -412,8 +412,7 @@ article h6 {
   color: #737373; }
 
 article p {
-  font-family: "helvetica", sans-serif;
-  line-height: 1.8em; }
+  font-family: "helvetica", sans-serif; }
 
 .fa-facebook,
 .fa-instagram {
@@ -427,6 +426,7 @@ article p {
   padding-top: 240px; }
 
 .btn-inicio {
+  display: none;
   position: fixed;
   bottom: 20px;
   right: 40px;
@@ -491,10 +491,9 @@ article p {
 .assinatura {
   background-color: #e3b4f4;
   text-align: center;
-  vertical-align: middle;
+  padding: .2em;
   font-weight: bold;
-  font-size: .8em;
-  height: 2em; }
+  font-size: .8em; }
 
 .cabecalho__grid-cabecalho {
   background-color: #fff;
@@ -503,19 +502,11 @@ article p {
   grid-template-areas: "logo navbar";
   grid-template-columns: 20% 80%; }
 
-.cabecalho__nav-bar {
-  grid-area: navbar;
-  font-weight: normal;
-  flex-direction: column;
-  font-size: 1em;
-  text-align: right; }
-
 .cabecalho__nav-bar a {
   opacity: .8;
-  line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 2em;
+  margin-left: 2em;
   color: #ff6600; }
 
 .cabecalho__nav-bar a:hover {
@@ -592,45 +583,60 @@ article p {
   background: rgba(0, 0, 0, 0.4); }
 
 .especialidades {
-  padding: 4em; }
+  padding: 4em 8em 4em 8em; }
 
 .terapias {
-  padding: 4em; }
+  padding: 4em 8em 4em 8em; }
 
 .profissionais {
-  padding: 4em; }
+  padding: 4em 8em 4em 8em; }
 
 .profissionais__conteudo {
-  display: flex;
-  background-color: #F2F5F7;
-  flex-wrap: wrap; }
+  display: flex; }
 
 .profissionais__cartao {
-  background-color: #fff;
-  height: 100px;
-  width: 23%;
+  grid-template-areas: "cartao-imagem" "cartao-corpo";
+  grid-template-columns: 100%;
   text-align: center;
-  margin: 1%;
-  transition: .3s;
-  box-shadow: 1px 1px 1px #CCC;
-  position: relative; }
+  box-shadow: 0 1px 5px #CCC;
+  background-color: #fff;
+  margin-bottom: 3em; }
 
-.profissionais__cartao:nth-child(4n) {
-  /* Quarto filho do elemento*/
-  margin-right: 0; }
+.profissionais__cartao__imagem {
+  grid-area: cartao-imagem;
+  transform: scale(1.5);
+  border-radius: 50%; }
 
-.profissionais__cartao:nth-child(4n+1) {
-  /* Quinto filho do elemento*/
-  margin-left: 0; }
+.profissionais__cartao__corpo {
+  display: grid;
+  grid-area: cartao-corpo;
+  grid-row-gap: .5rem;
+  grid-template-areas: "cartao-cabecalho" "cartao-conteudo";
+  grid-template-rows: 50px auto;
+  background-color: #fff;
+  padding: .75rem; }
+
+.profissionais__cartao__titulo {
+  font-weight: bold;
+  text-align: center; }
+
+.profissionais__cartao__subtitulo {
+  text-align: center; }
+
+.profissionais__cartao__descricao {
+  text-align: justify; }
+
+.profissionais__cartao__descricao article {
+  padding: 2em; }
 
 .paisecuidadores {
-  padding: 4em; }
+  padding: 4em 8em 4em 8em; }
 
 .contato {
-  padding: 4em; }
+  padding: 4em 8em 4em 8em; }
 
 .comochegar {
-  padding: 4em; }
+  padding: 4em 8em 4em 8em; }
 
 .rodape__grid-rodape {
   display: grid;
@@ -674,8 +680,27 @@ article p {
     grid-template-areas: "menu logo-medio";
     grid-template-columns: 10% 90%; }
 
+  .scroll-suave {
+    margin-top: 1em; }
+
+  .especialidade {
+    padding: 0; }
+
   .cabecalho__nav-bar {
-    display: none; }
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background: #fff;
+    margin: 0;
+    z-index: 1;
+    top: 0;
+    left: -90%;
+    transition: left 0.3s ease-out;
+    padding: 1em;
+    height: 100%;
+    width: 90%;
+    max-width: 320px;
+    position: fixed; }
 
   .cabecalho__menu-abrir {
     grid-area: menu;
@@ -692,11 +717,38 @@ article p {
     grid-area: logo-medio;
     transform: scale(0.8);
     justify-items: start;
-    display: block; } }
+    display: block; }
+
+  .rodape__grid-rodape {
+    grid-template-areas: "mapa" "social" "endereco";
+    grid-template-columns: 100%;
+    text-align: center; }
+
+  .profissionais__conteudo {
+    flex-direction: column; } }
 @media screen and (min-width: 768px) {
   .cabecalho__grid-cabecalho {
     grid-template-areas: "menu logo-medio";
     grid-template-columns: 10% 90%; }
+
+  .scroll-suave {
+    margin-top: 1em; }
+
+  .cabecalho__nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background: #fff;
+    margin: 0;
+    z-index: 1;
+    top: 0;
+    left: -90%;
+    transition: left 0.3s ease-out;
+    padding: 1em;
+    height: 100%;
+    width: 90%;
+    max-width: 320px;
+    position: fixed; }
 
   .cabecalho__menu-abrir {
     grid-area: menu;
@@ -714,31 +766,71 @@ article p {
     transform: scale(0.8);
     display: block; }
 
-  .menu-ativo .barra-nav {
-    left: 0; } }
+  .menu-ativo .cabecalho__nav-bar {
+    left: 0; }
+
+  .rodape__grid-rodape {
+    grid-template-areas: "mapa" "social" "endereco";
+    grid-template-columns: 100%;
+    text-align: center; }
+
+  .profissionais__conteudo {
+    flex-direction: row; }
+
+  .profissionais__cartao {
+    margin-right: 3em;
+    width: calc(50% - 3em); } }
 @media screen and (min-width: 992px) {
   .cabecalho__grid-cabecalho {
+    background-color: #fff;
+    display: grid;
+    align-items: center;
     grid-template-areas: "logo navbar";
     grid-template-columns: 20% 80%; }
 
+  .scroll-suave {
+    margin-top: 4em; }
+
   .cabecalho__nav-bar {
-    display: block;
-    font-size: 1em; }
+    grid-area: navbar;
+    flex-direction: initial;
+    background: none;
+    text-align: right;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    position: initial; }
 
   .cabecalho__menu-abrir,
   .cabecalho__menu-fechar {
     display: none; }
 
   .cabecalho__logo-grande {
-    display: block; } }
-@media screen and (min-width: 1200px) {
+    display: block; }
+
+  .rodape__grid-rodape {
+    grid-template-areas: "mapa social endereco";
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: auto;
+    text-align: left; }
+
+  .profissionais__cartao {
+    margin-right: 3em; } }
+@media screen and (min-width: 1280px) {
   .cabecalho__grid-cabecalho {
     grid-template-areas: "logo navbar";
     grid-template-columns: 20% 80%; }
 
+  .scroll-suave {
+    margin-top: 4em; }
+
   .cabecalho__nav-bar {
-    display: block;
-    font-size: 1.2em; }
+    grid-area: navbar;
+    font-size: 1.2em;
+    background: none;
+    width: 100%;
+    max-width: 100%;
+    position: initial; }
 
   .cabecalho__menu-abrir,
   .cabecalho__menu-fechar {
@@ -751,7 +843,10 @@ article p {
     display: none; }
 
   .cabecalho__logo-medio {
-    display: none; } }
+    display: none; }
+
+  .profissionais__cartao {
+    margin-bottom: 0; } }
 /* @import url('https://fonts.googleapis.com/css?family=Raleway');*/
 
 /*# sourceMappingURL=style.css.map */

@@ -6,8 +6,27 @@
     grid-template-areas: "menu logo-medio";
     grid-template-columns: 10% 90%;
   }
+  .scroll-suave {
+    margin-top: 1em;
+  }
+  .especialidade {
+    padding: 0;
+  }
   .cabecalho__nav-bar {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background: $cor-fundo-cabecalho;
+    margin: 0;
+    z-index: 1;
+    top: 0;
+    left: -90%;
+    transition: left 0.3s ease-out;
+    padding: 1em;
+    height: 100%;
+    width: 90%;
+    max-width: 320px;
+    position: fixed;
   }
   .cabecalho__menu-abrir {
     grid-area: menu;
@@ -20,12 +39,22 @@
   .cabecalho__logo-grande {
     display: none;
   }
-
   .cabecalho__logo-medio {
     grid-area: logo-medio;
     transform: scale(0.8);
     justify-items: start;
     display: block;
+  }
+  .rodape__grid-rodape {
+    grid-template-areas:
+    "mapa"
+    "social"
+    "endereco";
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+  .profissionais__conteudo {
+    flex-direction: column;
   }
 }
 
@@ -35,6 +64,25 @@
     grid-template-areas: "menu logo-medio";
     grid-template-columns: 10% 90%;
   }
+  .scroll-suave {
+    margin-top: 1em;
+  }
+  .cabecalho__nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background: $cor-fundo-cabecalho;
+    margin: 0;
+    z-index: 1;
+    top: 0;
+    left: -90%;
+    transition: left 0.3s ease-out;
+    padding: 1em;
+    height: 100%;
+    width: 90%;
+    max-width: 320px;
+    position: fixed;
+  }
   .cabecalho__menu-abrir {
     grid-area: menu;
     margin-left: 20px;
@@ -51,21 +99,47 @@
     transform: scale(0.8);
     display: block;
   }
-    .menu-ativo .barra-nav {
+  .menu-ativo .cabecalho__nav-bar {
       left: 0;
   }
-
+  .rodape__grid-rodape {
+    grid-template-areas:
+    "mapa"
+    "social"
+    "endereco";
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+  .profissionais__conteudo {
+    flex-direction: row;
+  }
+  .profissionais__cartao {
+    margin-right: 3em;
+    width: calc(50% - 3em);
+  }
 }
 
 // Telas maiores que 992px - DESKTOPS
 @media screen and (min-width: 992px) {
   .cabecalho__grid-cabecalho {
+    background-color: $cor-fundo-container;
+    display: grid;
+    align-items: center;
     grid-template-areas: "logo navbar";
     grid-template-columns: 20% 80%;
   }
+  .scroll-suave {
+    margin-top: 4em;
+  }
   .cabecalho__nav-bar {
-    display: block;
-    font-size: 1em;
+    grid-area: navbar;
+    flex-direction: initial;
+    background: none;
+    text-align: right;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    position: initial;
   }
   .cabecalho__menu-abrir,
   .cabecalho__menu-fechar {
@@ -74,17 +148,33 @@
   .cabecalho__logo-grande {
     display: block;
   }
+  .rodape__grid-rodape {
+    grid-template-areas: "mapa social endereco";
+    grid-template-columns: 33.33% 33.33% 33.33%; //três colunas de largura automáticas
+    grid-template-rows: auto;
+    text-align: left;
+  }
+  .profissionais__cartao {
+    margin-right: 3em;
+  }
 }
 
 // Telas maiores que 1200px - DESKTOPS NOVOS E TVS
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .cabecalho__grid-cabecalho {
     grid-template-areas: "logo navbar";
     grid-template-columns: 20% 80%;
   }
+  .scroll-suave {
+    margin-top: 4em;
+  }
   .cabecalho__nav-bar {
-    display: block;
+    grid-area: navbar;
     font-size: 1.2em;
+    background: none;
+    width: 100%;
+    max-width: 100%;
+    position: initial;
   }
   .cabecalho__menu-abrir,
   .cabecalho__menu-fechar {
@@ -98,5 +188,8 @@
   }
   .cabecalho__logo-medio {
     display: none;
+  }
+  .profissionais__cartao {
+    margin-bottom: 0;
   }
 }

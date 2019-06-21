@@ -1,4 +1,3 @@
-
 .cabecalho__grid-cabecalho {
   background-color: $cor-fundo-container;
   display: grid;
@@ -6,20 +5,11 @@
   grid-template-areas: "logo navbar";
   grid-template-columns: 20% 80%;
 }
-
-.cabecalho__nav-bar {
-  grid-area: navbar;
-  font-weight: normal;
-  flex-direction: column;
-  font-size: 1em;
-  text-align: right;
-}
 .cabecalho__nav-bar a {
   opacity: .8;
-  line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 2em;
+  margin-left: 2em;
   color: $cor-principal-3;
 }
 .cabecalho__nav-bar a:hover {
@@ -40,7 +30,6 @@
   background-color: $cor-principal-1; //hsl( calc(var(--progresso) * 1.2) , 80%, 50%); // Arco-iris
   transition: all 0.2s ease;
 }
-
 .cabecalho__logo-grande {
   transform: scale(0.8);
 }
@@ -88,12 +77,9 @@
   left: 0;
   text-indent: 0;
 }
-
-
 .menu-ativo .cabecalho__nav-bar {
   left: 0;
 }
-
 .menu-ativo:after {
   content: "";
   display: block;
@@ -104,6 +90,3 @@
   right: 0;
   background: rgba(0, 0, 0, 0.4);
 }
-
-
-  
