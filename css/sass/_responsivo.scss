@@ -6,14 +6,16 @@
     grid-template-areas: "menu logo-medio";
     grid-template-columns: 10% 90%;
   }
-  .scroll-suave {
-    margin-top: 1em;
+  .cabecalho__nav-bar nav {
+    display: flex;
+    flex-direction: column;
   }
-  .especialidade {
-    padding: 0;
+  .cabecalho__nav-bar a {
+    padding: 0em 0em 1em 0em;
   }
   .cabecalho__nav-bar {
     display: flex;
+    grid-area: navbar;
     flex-direction: column;
     align-content: space-between;
     background: $cor-fundo-cabecalho;
@@ -56,6 +58,11 @@
   .profissionais__conteudo {
     flex-direction: column;
   }
+  .especialidades, .terapias,
+   .profissionais, .paisecuidadores,
+   .contato, .comochegar {
+    padding: 2em 4em 2em 4em;
+  }
 }
 
 // Telas maiores que 768px - TABLETS
@@ -64,24 +71,12 @@
     grid-template-areas: "menu logo-medio";
     grid-template-columns: 10% 90%;
   }
-  .scroll-suave {
-    margin-top: 1em;
-  }
-  .cabecalho__nav-bar {
+  .cabecalho__nav-bar nav {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
-    background: $cor-fundo-cabecalho;
-    margin: 0;
-    z-index: 1;
-    top: 0;
-    left: -90%;
-    transition: left 0.3s ease-out;
-    padding: 1em;
-    height: 100%;
-    width: 90%;
-    max-width: 320px;
-    position: fixed;
+  }
+  .cabecalho__nav-bar a {
+    padding: 0em 0em 1em 0em;
   }
   .cabecalho__menu-abrir {
     grid-area: menu;
@@ -128,11 +123,13 @@
     grid-template-areas: "logo navbar";
     grid-template-columns: 20% 80%;
   }
-  .scroll-suave {
-    margin-top: 4em;
+  .cabecalho__nav-bar nav {
+    display: flex;
+    flex-direction: row;
   }
   .cabecalho__nav-bar {
     grid-area: navbar;
+    align-items: center;
     flex-direction: initial;
     background: none;
     text-align: right;
@@ -165,11 +162,13 @@
     grid-template-areas: "logo navbar";
     grid-template-columns: 20% 80%;
   }
-  .scroll-suave {
-    margin-top: 4em;
+  .cabecalho__nav-bar nav {
+    display: flex;
+    flex-direction: row;
   }
   .cabecalho__nav-bar {
     grid-area: navbar;
+    align-items: center;
     font-size: 1.2em;
     background: none;
     width: 100%;
@@ -192,4 +191,9 @@
   .profissionais__cartao {
     margin-bottom: 0;
   }
+  .especialidades, .terapias,
+  .profissionais, .paisecuidadores,
+  .contato, .comochegar {
+   padding: 6em 10em 6em 10em;
+ }
 }

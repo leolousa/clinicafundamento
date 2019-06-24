@@ -17,15 +17,17 @@
       <button class="cabecalho__menu-abrir">Abre Menu</button>
       <img class="cabecalho__logo-grande" src="img/logo-fundamento@300x192.png">
       <img class="cabecalho__logo-medio" src="img/logo-fundamento@368x70.png">
-      <nav class="cabecalho__nav-bar">
-        <button class="cabecalho__menu-fechar">Fecha Menu</button>
-        <a href="#especialidades" onclick="fechaMenu();" class="scroll-suave">Especialidades</a>
-        <a href="#terapias" onclick="fechaMenu();" class="scroll-suave">Terapias</a>
-        <a href="#profissionais" onclick="fechaMenu();" class="scroll-suave">Profissionais</a>
-        <a href="#paiscuidadores" onclick="fechaMenu();" class="scroll-suave">Pais e Cuidadores</a>
-        <a href="#contato" onclick="fechaMenu();" class="scroll-suave">Contato</a>
-        <!--<a href="#usuarios" class="scroll-suave"><i class="far fa-user-circle"></i> Login</a>-->
-      </nav>
+      <div class="cabecalho__nav-bar">
+        <nav>
+          <button class="cabecalho__menu-fechar">Fecha Menu</button>
+          <a href="#especialidades" onclick="fechaMenu();" class="scroll-suave">Especialidades</a>
+          <a href="#terapias" onclick="fechaMenu();" class="scroll-suave">Terapias</a>
+          <a href="#profissionais" onclick="fechaMenu();" class="scroll-suave">Profissionais</a>
+          <a href="#paiscuidadores" onclick="fechaMenu();" class="scroll-suave">Pais e Cuidadores</a>
+          <a href="#contato" onclick="fechaMenu();" class="scroll-suave">Contato</a>
+          <!--<a href="#usuarios" class="scroll-suave"><i class="far fa-user-circle"></i> Login</a>-->
+        </nav>
+      </div>
     </div>
   </header>
   <main class="conteudo">
@@ -38,7 +40,7 @@
       <h1><a id="especialidades" class="scroll-suave"></a>Especialidades</h1>
       <article>
         <h2>Transtorno do Espectro Autista - TEA</h2>
-        <p>É uma condição que leva a dificuldade na comunicação e nas habilidades sociais. Não é uma doença, a pessoa já nasce autista e será autista por toda a vida (Dra. Andréia Carvalho).</p>
+        <p>É uma condição que leva à dificuldade na comunicação e nas habilidades sociais. Não é uma doença, a pessoa já nasce autista e será autista por toda a vida (Dra. Andréia Carvalho).</p>
         <p>Segundo a <a href="https://www.psychiatry.org" target="_blank">Associação Psiquiátrica Americana</a> o autismo é uma desordem difusa do desenvolvimento que se manifesta com as seguintes características:</p>
         <ul>
           <li>Prejuízo na qualidade da comunicação verbal e não verbal e na atividade imaginativa;</li>
@@ -48,8 +50,7 @@
         </ul>
         
         <h2>Transtorno do Défict de Atenção e Hipertividade - TDAH</h2>
-        <p>É um transtorno psiquiátrico, mais comum na infância e adolescência. O TDAH (cid 10, F90) se caracteriza pela combinação de sintomas de desatenção, hiperatividade e impulsividade.</p>
-        <p>Aparece na infância e na maioria dos casos acompanha o indivíduo por toda a vida.</p>
+        <p>É um transtorno psiquiátrico, mais comum na infância e adolescência. O TDAH (cid 10, F90) se caracteriza pela combinação de sintomas de desatenção, hiperatividade e impulsividade. Aparece na infância e na maioria dos casos acompanha o indivíduo por toda a vida.</p>
         
         <h2>Transtorno do Processamento Sensorial</h2>
         <p>É  dificuldade da criança em usar informações recebidas pelos sentidos, para que ela consiga realizar as atividades cotidianas.</p>
@@ -159,20 +160,24 @@
 
     <section class="contato">
       <h1><a id="contato" class="scroll-suave"></a>Contato</h1>
-      <div class="form-contato">
-        <form action="">
-          <h2>Fale com a gente!</h2>
-          <fieldset class="campos">
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="">
-  
-            <label for="endereco">Endereço</label>
-            <input type="text" name="endereco" id="">
+      <div class="form__contato">
+        <h2>Fale com a gente!</h2>
+        <form action="#" method="post">
+          <fieldset class="form__grupo">
+            <div class="campo">
+              <label class="form_contato_label" for="nome">Nome</label>
+              <input class="form__contato__input" type="text" name="nome" id="">
+            </div>
+            <div class="campo">
+              <label class="form_contato_label" for="email">E-mail</label>
+              <input class="form__contato__input" type="email" name="email" id="">
+            </div>
+            <div class="campo">
+              <label class="form_contato_label" for="mensagem">Mensagem</label>
+              <textarea class="form__contato__textarea" rows="5" name="mensagem" id=""></textarea>
+            </div>
             
-            <label for="fone">Fone</label>
-            <input type="text" name="fone" id="">
-            
-            <button class="form-contato-botao" type="submit">Enviar</button>
+            <button class="form__contato__button" type="submit">Enviar</button>
           </fieldset>
         </form>
       </div>

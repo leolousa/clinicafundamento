@@ -358,7 +358,7 @@ p {
   line-height: 1.5em; }
 
 h1 {
-  margin: 1em 0 .8em;
+  margin: 0 0 .8em;
   font-size: 2.8em;
   text-transform: uppercase; }
 
@@ -381,15 +381,13 @@ h6 {
   margin: 1em 0;
   font-size: .8em; }
 
-ol, ul {
-  list-style: none; }
-
 img {
   max-width: 100%; }
 
 a {
   line-height: 1.5em;
-  text-decoration: none; }
+  text-decoration: none;
+  color: #ff6600; }
 
 input {
   width: 100%; }
@@ -404,7 +402,8 @@ article {
 
 article h2 {
   font-family: "Montserrat", sans-serif;
-  margin: 1em 0 .5em;
+  line-height: 1em;
+  margin: 1em 0 1em;
   color: #33cc99; }
 
 article h6 {
@@ -413,6 +412,12 @@ article h6 {
 
 article p {
   font-family: "helvetica", sans-serif; }
+
+article ul, ol {
+  font-family: "helvetica", sans-serif;
+  line-height: 1.8em;
+  margin-left: 2em;
+  list-style: square; }
 
 .fa-facebook,
 .fa-instagram {
@@ -635,6 +640,71 @@ article p {
 .contato {
   padding: 4em 8em 4em 8em; }
 
+.form__contato {
+  margin-left: 4em;
+  margin-right: 4em; }
+
+.form__grupo {
+  padding: 2em 0 2em 0; }
+
+.form_contato_label {
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 2em; }
+
+.form__contato__input {
+  width: 100%;
+  color: #292929;
+  font-size: 18px;
+  background-color: #fff;
+  border: 1px solid #E9E9E9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-indent: 20px; }
+
+.form__contato__textarea {
+  width: 100%;
+  color: #292929;
+  font-size: 18px;
+  background-color: #fff;
+  border: 1px solid #E9E9E9;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 200px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  text-indent: 20px;
+  padding-top: 16px;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Arial", Times, serif; }
+
+.form__contato__button {
+  width: 100%;
+  font-size: 18px;
+  border-radius: 4px;
+  color: #fff;
+  height: 40px;
+  opacity: .8;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background: #33cc99;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #500707;
+  border-right: 1px solid #500707;
+  transition: 1s; }
+
+.form__contato__button:hover {
+  opacity: 1; }
+
 .comochegar {
   padding: 4em 8em 4em 8em; }
 
@@ -680,14 +750,16 @@ article p {
     grid-template-areas: "menu logo-medio";
     grid-template-columns: 10% 90%; }
 
-  .scroll-suave {
-    margin-top: 1em; }
+  .cabecalho__nav-bar nav {
+    display: flex;
+    flex-direction: column; }
 
-  .especialidade {
-    padding: 0; }
+  .cabecalho__nav-bar a {
+    padding: 0em 0em 1em 0em; }
 
   .cabecalho__nav-bar {
     display: flex;
+    grid-area: navbar;
     flex-direction: column;
     align-content: space-between;
     background: #fff;
@@ -725,30 +797,23 @@ article p {
     text-align: center; }
 
   .profissionais__conteudo {
-    flex-direction: column; } }
+    flex-direction: column; }
+
+  .especialidades, .terapias,
+  .profissionais, .paisecuidadores,
+  .contato, .comochegar {
+    padding: 2em 4em 2em 4em; } }
 @media screen and (min-width: 768px) {
   .cabecalho__grid-cabecalho {
     grid-template-areas: "menu logo-medio";
     grid-template-columns: 10% 90%; }
 
-  .scroll-suave {
-    margin-top: 1em; }
-
-  .cabecalho__nav-bar {
+  .cabecalho__nav-bar nav {
     display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    background: #fff;
-    margin: 0;
-    z-index: 1;
-    top: 0;
-    left: -90%;
-    transition: left 0.3s ease-out;
-    padding: 1em;
-    height: 100%;
-    width: 90%;
-    max-width: 320px;
-    position: fixed; }
+    flex-direction: column; }
+
+  .cabecalho__nav-bar a {
+    padding: 0em 0em 1em 0em; }
 
   .cabecalho__menu-abrir {
     grid-area: menu;
@@ -788,11 +853,13 @@ article p {
     grid-template-areas: "logo navbar";
     grid-template-columns: 20% 80%; }
 
-  .scroll-suave {
-    margin-top: 4em; }
+  .cabecalho__nav-bar nav {
+    display: flex;
+    flex-direction: row; }
 
   .cabecalho__nav-bar {
     grid-area: navbar;
+    align-items: center;
     flex-direction: initial;
     background: none;
     text-align: right;
@@ -821,11 +888,13 @@ article p {
     grid-template-areas: "logo navbar";
     grid-template-columns: 20% 80%; }
 
-  .scroll-suave {
-    margin-top: 4em; }
+  .cabecalho__nav-bar nav {
+    display: flex;
+    flex-direction: row; }
 
   .cabecalho__nav-bar {
     grid-area: navbar;
+    align-items: center;
     font-size: 1.2em;
     background: none;
     width: 100%;
@@ -846,7 +915,12 @@ article p {
     display: none; }
 
   .profissionais__cartao {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+
+  .especialidades, .terapias,
+  .profissionais, .paisecuidadores,
+  .contato, .comochegar {
+    padding: 6em 10em 6em 10em; } }
 /* @import url('https://fonts.googleapis.com/css?family=Raleway');*/
 
 /*# sourceMappingURL=style.css.map */

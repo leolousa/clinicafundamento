@@ -47,7 +47,7 @@ p {
   line-height: 1.5em;
 }
 h1 {
-  margin: 1em 0 .8em;
+  margin: 0 0 .8em;
   font-size: 2.8em;
   text-transform: uppercase;
 }
@@ -70,15 +70,14 @@ h6 {
   margin: 1em 0;
   font-size: .8em;
 }
-ol, ul {
-  list-style: none;
-}
+
 img{
   max-width: 100%;
 }
 a {
   line-height: 1.5em;
   text-decoration: none;
+  color: $cor-principal-3;
 }
 input {
   width: 100%;
@@ -93,7 +92,8 @@ article {
 }
 article h2{
   font-family: $fonte-site;
-  margin: 1em 0 .5em;
+  line-height: 1em;
+  margin: 1em 0 1em;
   color: $cor-principal-2;
 }
 article h6 {
@@ -103,6 +103,12 @@ article h6 {
 article p {
   font-family: $fonte-artigo;
   //line-height: 1.8em;
+}
+article ul, ol {
+  font-family: $fonte-artigo;
+  line-height: 1.8em;
+  margin-left: 2em;
+  list-style: square;
 }
 
 .fa-facebook,
