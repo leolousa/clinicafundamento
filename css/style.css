@@ -585,7 +585,8 @@ article ul, ol {
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.4); }
+  background: rgba(0, 0, 0, 0.4);
+  transition: 5s; }
 
 .especialidades {
   padding: 4em 8em 4em 8em; }
@@ -657,15 +658,15 @@ article ul, ol {
   color: #292929;
   font-size: 18px;
   background-color: #fff;
-  border: 1px solid #E9E9E9;
+  border: 1px solid #CCC;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   height: 40px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  text-indent: 20px; }
+  border-bottom: 1px solid #CCC;
+  border-left: 1px solid #CCC;
+  text-indent: 10px; }
 
 .form__contato__textarea {
   width: 100%;
@@ -678,29 +679,29 @@ article ul, ol {
   border-radius: 5px;
   height: 200px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #CCC;
+  border-left: 1px solid #CCC;
   text-indent: 20px;
   padding-top: 16px;
   padding-left: 0;
   padding-right: 0;
-  font-family: "Arial", Times, serif; }
+  font-family: "Montserrat", sans-serif; }
 
 .form__contato__button {
   width: 100%;
   font-size: 18px;
   border-radius: 4px;
   color: #fff;
-  height: 40px;
+  height: 50px;
   opacity: .8;
   margin-bottom: 20px;
   cursor: pointer;
   background: #33cc99;
   display: block;
   border: none;
-  border-bottom: 1px solid #500707;
-  border-right: 1px solid #500707;
-  transition: 1s; }
+  border-bottom: 1px solid #0b8007;
+  border-right: 1px solid #0b8007;
+  transition: .3s; }
 
 .form__contato__button:hover {
   opacity: 1; }
@@ -790,6 +791,10 @@ article ul, ol {
     transform: scale(0.8);
     justify-items: start;
     display: block; }
+
+  .form__contato {
+    margin-left: 1em;
+    margin-right: 1em; }
 
   .rodape__grid-rodape {
     grid-template-areas: "mapa" "social" "endereco";

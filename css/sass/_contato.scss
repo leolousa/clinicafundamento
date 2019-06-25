@@ -18,55 +18,55 @@
 
 .form__contato__input {
   width: 100%;
-  color: #292929;
+  color: $cor-texto-campo;
   font-size: 18px;
-  background-color: $cor-fundo-cartao;
-  border: 1px solid #E9E9E9;
+  background-color: $cor-fundo-campo;
+  border: 1px solid $cor-borda-campo;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   height: 40px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  text-indent: 20px;
+  border-bottom: 1px solid $cor-borda-campo;
+  border-left: 1px solid $cor-borda-campo;
+  text-indent: 10px;
 }
 
 .form__contato__textarea {
   width: 100%;
-  color: #292929;
+  color: $cor-texto-campo;
   font-size: 18px;
-  background-color: $cor-fundo-cartao;
+  background-color: $cor-fundo-campo;
   border: 1px solid #E9E9E9;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   height: 200px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
+  border-bottom: 1px solid $cor-borda-campo;
+  border-left: 1px solid $cor-borda-campo;
   text-indent: 20px;
   padding-top: 16px;
   padding-left: 0;
   padding-right: 0;
-  font-family: "Arial", Times, serif;
+  font-family: $fonte-site;
 }
 
 .form__contato__button {
   width: 100%;
   font-size: 18px;
   border-radius: 4px;
-  color: $cor-fundo-cartao;
-  height: 40px;
+  color: $cor-fundo-botao;
+  height: 50px;
   opacity: .8;
   margin-bottom: 20px;
   cursor: pointer;
   background: $cor-principal-2;
   display: block;
   border: none;
-  border-bottom: 1px solid #500707;
-  border-right: 1px solid #500707;
-  transition: 1s;
+  border-bottom: 1px solid $cor-borda-botao;
+  border-right: 1px solid $cor-borda-botao;
+  transition: .3s;
 }
 
 .form__contato__button:hover {

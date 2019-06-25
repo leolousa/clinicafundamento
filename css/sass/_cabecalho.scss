@@ -43,7 +43,6 @@
 // Menu
 .cabecalho__menu-abrir,
 .cabecalho__menu-fechar {
-  //display: none;
   background: none;
   border: 0;
   outline: 0;
@@ -89,4 +88,5 @@
   bottom: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.4);
+  transition: 5s;
 }
