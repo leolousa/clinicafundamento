@@ -40,10 +40,15 @@
 
 
 .profissionais__cartao__descricao {
-  text-align: justify;
+  text-align: left;
 }
 .profissionais__cartao__descricao article{
   padding: 2em;
+}
+
+.profissionais__social li{
+  display: inline;
+  margin-right: .8em;
 }
 
 

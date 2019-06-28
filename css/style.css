@@ -355,7 +355,8 @@ table {
 
 p {
   margin: 1em 0;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  font-size: 1.2rem; }
 
 h1 {
   margin: 0 0 .8em;
@@ -403,7 +404,7 @@ article {
 article h2 {
   font-family: "Montserrat", sans-serif;
   line-height: 1em;
-  margin: 1em 0 1em;
+  margin: 1.8em 0 1em;
   color: #33cc99; }
 
 article h6 {
@@ -414,6 +415,7 @@ article p {
   font-family: "helvetica", sans-serif; }
 
 article ul, ol {
+  font-size: 1.2em;
   font-family: "helvetica", sans-serif;
   line-height: 1.8em;
   margin-left: 2em;
@@ -429,6 +431,31 @@ article ul, ol {
 #paiscuidadores,
 #contato {
   padding-top: 240px; }
+
+.alert {
+  padding: 20px;
+  color: #fff;
+  border-radius: 5px;
+  line-height: 1.5em; }
+
+.alert-danger {
+  background-color: #f76258; }
+
+.alert-success {
+  background-color: #10b60b; }
+
+.closeBtn {
+  margin-left: 15px;
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  font-size: .5em;
+  line-height: 2em;
+  cursor: pointer;
+  transition: 0.3s; }
+
+.closeBtn:hover {
+  color: #292929; }
 
 .btn-inicio {
   display: none;
@@ -630,10 +657,14 @@ article ul, ol {
   text-align: center; }
 
 .profissionais__cartao__descricao {
-  text-align: justify; }
+  text-align: left; }
 
 .profissionais__cartao__descricao article {
   padding: 2em; }
+
+.profissionais__social li {
+  display: inline;
+  margin-right: .8em; }
 
 .paisecuidadores {
   padding: 4em 8em 4em 8em; }
@@ -722,6 +753,7 @@ article ul, ol {
   color: #fff; }
 
 .rodape__grid-rodape p {
+  font-size: 1em;
   color: #fff;
   margin: .5em;
   line-height: 1em; }
