@@ -11,7 +11,7 @@ function initMap() {
     position: fundamento,
     map: map,
     title: 'Clínica FundamenTO',
-    icon:'img/fundamento@32.png',
+    icon:'assets/img/fundamento@32.png',
     animation: google.maps.Animation.BOUNCE,
     disableDefaultUI: true
   });

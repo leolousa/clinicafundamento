@@ -3,7 +3,7 @@
 # Sass
 .sass-cache
 .sass-cache/*
-/css/.sass-cache
+/assets/css/.sass-cache
 
 # dependencies
 /node_modules
