@@ -527,6 +527,20 @@ article ul, ol {
   font-weight: bold;
   font-size: .8em; }
 
+.card__artigo {
+  display: grid;
+  margin-bottom: 100px; }
+
+.card__artigo__texto {
+  grid-area: card-texto;
+  vertical-align: top; }
+
+.card__artigo__texto--margem {
+  margin: 0 40px 30px 0px; }
+
+.card__artigo__imagem {
+  grid-area: card-imagem; }
+
 .cabecalho__grid-cabecalho {
   background-color: #fff;
   display: grid;
@@ -839,7 +853,11 @@ article ul, ol {
   .especialidades, .terapias,
   .profissionais, .paisecuidadores,
   .contato, .comochegar {
-    padding: 2em 4em 2em 4em; } }
+    padding: 2em 4em 2em 4em; }
+
+  .card__artigo {
+    grid-template-columns: 100%;
+    grid-template-areas: "card-texto" "card-imagem"; } }
 @media screen and (min-width: 768px) {
   .cabecalho__grid-cabecalho {
     grid-template-areas: "menu logo-medio";
@@ -877,11 +895,7 @@ article ul, ol {
     text-align: center; }
 
   .profissionais__conteudo {
-    flex-direction: row; }
-
-  .profissionais__cartao {
-    margin-right: 3em;
-    width: calc(50% - 3em); } }
+    flex-direction: column; } }
 @media screen and (min-width: 992px) {
   .cabecalho__grid-cabecalho {
     background-color: #fff;
@@ -919,7 +933,15 @@ article ul, ol {
     text-align: left; }
 
   .profissionais__cartao {
-    margin-right: 3em; } }
+    margin-right: 3em;
+    width: calc(50% - 3em); }
+
+  .profissionais__conteudo {
+    flex-direction: row; }
+
+  .card__artigo {
+    grid-template-areas: "card-texto card-imagem";
+    grid-template-columns: 50% 50%; } }
 @media screen and (min-width: 1280px) {
   .cabecalho__grid-cabecalho {
     grid-template-areas: "logo navbar";

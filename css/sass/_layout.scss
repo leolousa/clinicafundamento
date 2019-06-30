@@ -40,3 +40,18 @@
   font-weight: bold;
   font-size: .8em;
 }
+.card__artigo {
+  display: grid;
+  margin-bottom: 100px;
+}
+.card__artigo__texto {
+  grid-area: card-texto;
+  vertical-align: top;
+}
+.card__artigo__texto--margem {
+  margin: 0 40px 30px 0px;
+}
+
+.card__artigo__imagem {
+  grid-area: card-imagem;
+}

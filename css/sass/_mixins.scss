@@ -5,13 +5,11 @@
   -ms-border-radius: $raio-botao;
   border-radius: $raio-botao;
 }
-
 @mixin pseudo($display: block, $pos: absolute, $content: ''){
   content: $content;
   display: $display;
   position: $pos;
 }
-
 @mixin proporcao-responsiva($x,$y, $pseudo: false) {
   $padding: unquote( ( $y / $x ) * 100 + '%' );
   @if $pseudo {

@@ -67,6 +67,12 @@
    .contato, .comochegar {
     padding: 2em 4em 2em 4em;
   }
+  .card__artigo {
+    grid-template-columns: 100%;
+    grid-template-areas:
+     "card-texto"
+     "card-imagem";
+  }
 }
 
 // Telas maiores que 768px - TABLETS
@@ -110,12 +116,10 @@
     text-align: center;
   }
   .profissionais__conteudo {
-    flex-direction: row;
+    flex-direction: column;
   }
-  .profissionais__cartao {
-    margin-right: 3em;
-    width: calc(50% - 3em);
-  }
+  
+  
 }
 
 // Telas maiores que 992px - DESKTOPS
@@ -155,8 +159,17 @@
     grid-template-rows: auto;
     text-align: left;
   }
+
   .profissionais__cartao {
     margin-right: 3em;
+    width: calc(50% - 3em);
+  }
+  .profissionais__conteudo {
+    flex-direction: row;
+  }
+  .card__artigo {
+    grid-template-areas: "card-texto card-imagem";
+    grid-template-columns: 50% 50%;
   }
 }
 
@@ -198,6 +211,7 @@
   .especialidades, .terapias,
   .profissionais, .paisecuidadores,
   .contato, .comochegar {
-   padding: 6em 10em 6em 10em;
- }
+    padding: 6em 10em 6em 10em;
+  }
+
 }
