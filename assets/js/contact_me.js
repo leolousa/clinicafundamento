@@ -47,7 +47,7 @@ $(function() {
                     $('#sucesso').html("<div class='alert alert-danger'>");
                     //$('#sucesso > .alert-danger').html("<button type='button' class='closeBtn' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
                     $('#sucesso > .alert-danger').append("<strong>Desculpe " + firstName + 
-                    ", parece que nosso servidor de e-mail não responde. Por favor tente mais tarde ou envie uma mensagem para contato@clinicafundamento.com.br");
+                    ", parece que nosso servidor de e-mail não responde. Por favor tente mais tarde ou envie um e-mail para contato@clinicafundamento.com.br");
                     $('#sucesso > .alert-danger').append('</div>');
                     //clear all fields
                     $('#formContato').trigger("reset");
