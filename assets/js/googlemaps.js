@@ -1,8 +1,8 @@
 // GOOGLE MAPS
 // Initialize and add the map
 function initMap() {
-  // A localização da Clínica -15.831523, -48.017480
-  var fundamento = {lat: -15.831523, lng: -48.017480};
+  // A localização da Clínica -15.841678, -48.023933
+  var fundamento = {lat: -15.841678, lng: -48.023933};
   // The map, centered at Uluru
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 17, center: fundamento});
