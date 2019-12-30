@@ -175,6 +175,13 @@
 
 // Telas maiores que 1200px - DESKTOPS NOVOS E TVS
 @media screen and (min-width: 1280px) {
+
+  .container {
+    display: flexbox;
+    align-items: center;
+    width: 1280px;
+  }
+
   .cabecalho__grid-cabecalho {
     grid-template-areas: "logo navbar";
     grid-template-columns: 20% 80%;
