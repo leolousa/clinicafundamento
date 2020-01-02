@@ -5,6 +5,8 @@
   grid-template-areas: "logo navbar";
   grid-template-columns: 20% 80%;
 }
+
+
 .cabecalho__nav-bar a {
   opacity: .8;
   text-decoration: none;
@@ -12,6 +14,7 @@
   margin-left: 2em;
   color: $cor-principal-3;
 }
+
 .cabecalho__nav-bar a:hover {
   opacity: 1;
 }

@@ -9,9 +9,12 @@ function myFunction() {
   btnInicio = document.querySelector('.btn-inicio');
   progressbar.style.setProperty('--progresso', scrolled);
 
+  // Exibe e esconde o botão para ir ao topo
   if (scroll = null || scrolled < 5) {
     btnInicio.style.setProperty('display', 'none');
   } else {
     btnInicio.style.setProperty('display', 'block');
   }
+
+
 }

@@ -22,6 +22,11 @@
   z-index: $indice-999;
 }
 
+.hero {
+  max-width: 100%;
+  min-width: 100%;
+}
+
 .conteudo {
   grid-area: conteudo;
 }
