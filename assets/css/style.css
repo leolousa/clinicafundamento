@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/* ESTILO GERAL */
-/* 1. Cores */
 /* 2. Vari├íveis */
 /* 3. Normalize */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -422,13 +420,6 @@ article ul, ol {
 .fa-instagram {
   font-size: 2em; }
 
-#especialidades,
-#terapias,
-#profissionais,
-#paiscuidadores,
-#contato {
-  padding-top: 240px; }
-
 .alert {
   padding: 20px;
   color: #fff;
@@ -542,6 +533,14 @@ article ul, ol {
 .card__artigo__imagem {
   grid-area: card-imagem; }
 
+#quemsomos,
+#especialidades,
+#terapias,
+#profissionais,
+#paiscuidadores,
+#contato {
+  padding-top: 240px; }
+
 .cabecalho__grid-cabecalho {
   background-color: #fff;
   display: grid;
@@ -640,6 +639,9 @@ article ul, ol {
   width: 100%;
   height: 14px;
   background-color: #ffcc00; }
+
+.quemsomos {
+  padding: 4em 8em 4em 8em; }
 
 .especialidades {
   padding: 4em 8em 4em 8em; }
@@ -862,7 +864,7 @@ article ul, ol {
   .profissionais__conteudo {
     flex-direction: column; }
 
-  .especialidades, .terapias,
+  .quemsomos, .especialidades, .terapias,
   .profissionais, .paisecuidadores,
   .contato, .comochegar {
     padding: 2em 4em 2em 4em; }
@@ -993,7 +995,7 @@ article ul, ol {
   .profissionais__cartao {
     margin-bottom: 0; }
 
-  .especialidades, .terapias,
+  .quemsomos, .especialidades, .terapias,
   .profissionais, .paisecuidadores,
   .contato, .comochegar {
     padding: 6em 10em 6em 10em; } }

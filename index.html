@@ -26,6 +26,7 @@
       <div class="cabecalho__nav-bar">
         <nav>
           <button class="cabecalho__menu-fechar">Fecha Menu</button>
+          <a href="#quemsomos" onclick="fechaMenu();" class="scroll-suave">Quem somos</a>
           <a href="#especialidades" onclick="fechaMenu();" class="scroll-suave">Especialidades</a>
           <a href="#terapias" onclick="fechaMenu();" class="scroll-suave">Terapias</a>
           <a href="#profissionais" onclick="fechaMenu();" class="scroll-suave">Profissionais</a>
@@ -38,28 +39,62 @@
   </header>
   <main class="conteudo">
     <section class="front" id="inicio">
-
       <div class="gallery autoplay items-5">
         <div id="item-1" class="control-operator"></div>
         <div id="item-2" class="control-operator"></div>
         <div id="item-3" class="control-operator"></div>
         <div id="item-4" class="control-operator"></div>
         <div id="item-5" class="control-operator"></div>
+
         <figure class="item">
-          <h1><img class="hero" src="assets/img/clinica-fundamento-ginasio-integracao-sensorial.jpg" alt="Ginásio de Integração Sensorial"></h1>
+          <h1>
+            <img class="hero" src="assets/img/clinica-fundamento-ginasio-integracao-sensorial.jpg" alt="Ginásio de Integração Sensorial">
+            <div class="gallery__box-foto-1">
+              <p class="gallery__box-foto-1__titulo">Brincar<br>Interagir<br>Experimentar<br>Desenvolver<br></p>
+              <a href="#"><p class="gallery__box-foto-1__subtitulo">Nosso Ginásio de<br>Integração Sensorial</p></a>
+            </div>
+          </h1>
         </figure>
         <figure class="item">
-          <h1><img class="hero" src="assets/img/clinica-fundamento-integracao-sensorial.jpg" alt="Integração Sensorial"></h1>
+          <h1>
+            <img class="hero" src="assets/img/clinica-fundamento-integracao-sensorial.jpg" alt="Integração Sensorial">
+            <div class="gallery__box-foto-2">
+              <p class="gallery__box-foto-2__titulo">10 anos de compromisso <br>com a Terapia Ocupacional<br>em Brasília!</p>
+              <a href="#"><p class="gallery__box-foto-2__subtitulo">Ajudar a criança a ter<br>autonomia</p></a>
+            </div>
+          </h1>
         </figure>
         <figure class="item">
-          <h1><img class="hero" src="assets/img/clinica-fundamento-motricidade.jpg" alt="Motricidade"></h1>
+          <h1>
+            <img class="hero" src="assets/img/clinica-fundamento-motricidade.jpg" alt="Motricidade">
+            <div class="gallery__box-foto-3">
+              <p class="gallery__box-foto-3__titulo">Motricidade<br></p>
+              <a href="#"><p class="gallery__box-foto-3__subtitulo">Consciência corporal<br>em relação aos objetos,<br>espaços e pessoas</p></a>
+            </div>
+          </h1>
         </figure>
         <figure class="item">
-          <h1><img class="hero" src="assets/img/clinica-fundamento-sala-terapia-ocupacional.jpg" alt="Motricidade"></h1>
+          <h1>
+            <img class="hero" src="assets/img/clinica-fundamento-sala-terapia-ocupacional.jpg" alt="Terapia Ocupacional">
+            <div class="gallery__box-foto-4">
+              <p class="gallery__box-foto-4__titulo">Terapia Ocupacional<br></p>
+              <a href="#"><p class="gallery__box-foto-4__subtitulo">Motricidade fina,<br>
+                 Atividades da Vida Diária (AVD) e<br>Atividades da Vida Prática (AVP)</p></a>
+            </div>
+          </h1>
         </figure>
         <figure class="item">
-          <h1><img class="hero" src="assets/img/clinica-fundamento-sala-psicoterapia.jpg" alt="Motricidade"></h1>
+          <h1>
+            <img class="hero" src="assets/img/clinica-fundamento-sala-psicoterapia.jpg" alt="Psicoterapia e Psicopedagogia">
+            <div class="gallery__box-foto-5">
+              <p class="gallery__box-foto-5__titulo">Psicoterapia<br>e Psicopedagogia<br></p>
+              <a href="#"><p class="gallery__box-foto-5__subtitulo">ABA - Análise do Comportamento Integrada<br>
+              e Atendimento na área de aprendizagem<br>para crianças e adolescentes
+              </p></a>
+            </div>
+          </h1>
         </figure>                
+
         <div class="controls">
           <a href="#item-1" class="control-button">.</a>
           <a href="#item-2" class="control-button">.</a>
@@ -68,7 +103,35 @@
           <a href="#item-5" class="control-button">.</a>
         </div>
       </div>
+    </section>
+    <section class="quemsomos">
+      <h1><a id="quemsomos" class="scroll-suave"></a>Quem somos</h1>
+      <article>
+        <div class="card__artigo">
+          <div class="card__artigo__texto">
+            <h2 class="card__artigo__texto--margem">Missão da FundamenTO</h2>
+            <p class="card__artigo__texto--margem">Iniciada em Águas Claras/DF em 2010 pela Dra. Flávia Spíndola,
+               temos como missão ajudar a criança a ter autonomia e independência em suas ocupações, trazendo também qualidade de vida
+                e bem estar para a família.</p>
+            <h2 class="card__artigo__texto--margem">Nossos objetivos</h2>
+            <p class="card__artigo__texto--margem">
+              1. Conquistar as fases do desenvolvimento que ainda não foram alcançadas pela criança;<br><br>
+              2. Orientar a família e escola em como lidar com as limitações e dificuldades da criança;<br><br>
+              3. Apresentar caminhos e alternativas para pais de crianças com dificuldades cognitivas, de desenvolvimento sensório motor ou com síndrome congênere.<br><br>
+            </p>
+          </div>
 
+
+
+
+
+
+
+          <div class="card__artigo__imagem">
+            <img src="assets/img/clinica-fundamento-recepcao.jpg" alt="Clínica FundamenTO">
+          </div>
+        </div>
+      </article>
 
     </section>
     <section class="especialidades">
@@ -125,7 +188,7 @@
         <div class="card__artigo">
           <div class="card__artigo__texto">
             <h2 class="card__artigo__texto--margem">Integração Sensorial de Ayres®</h2>
-            <p class="card__artigo__texto--margem">No final dos anos 50, a Dra. Ane Jane Ayres, desenvolveu essa abordagem. A Integração Sensorial é um processo neurológico que promove a capacidade de implementar e de organizar as sensações, dando uma resposta adaptativa. Ele torna possível utilizar o corpo eficientemente no meio.</p>
+            <p class="card__artigo__texto--margem">Criada pela <a href="https://en.wikipedia.org/wiki/Anna_Jean_Ayres" target="_blank">Dra. Anna Jean Ayres</a> a Integração Sensorial é um processo neurológico que promove a capacidade de implementar e de organizar as sensações, fazendo com que o indivíduo dê uma resposta adaptativa. Ele torna possível utilizar o corpo de maneira eficiente no meio.</p>
           </div>
           <div class="card__artigo__imagem">
             <img src="assets/img/front1.jpg" alt="">
@@ -177,7 +240,7 @@
             </ul>
             <div class="profissionais__cartao__descricao">
               <article>
-                <p>Com 15 anos de atuação em Terapia Ocupacional, graduada pela PUC Goiás, possui cursos com as abordagens Bobath, Psicomotricidade, Motricidade fina, Certificação Internacional de Integração Sensorial, Processamento Sensorial da Vida Diária, Perfil Sensorial, Escala Bayley III e Seletividade Alimentar.</p>
+                <p>Com 17 anos de atuação em Terapia Ocupacional, graduada pela PUC Goiás, possui cursos com as abordagens Bobath, Psicomotricidade, Motricidade fina, Certificação Internacional de Integração Sensorial, Processamento Sensorial da Vida Diária, Perfil Sensorial, Escala Bayley III e Seletividade Alimentar.</p>
                 <p>Atua com crianças com atraso no desenvolvimento infantil, Síndrome de Down, Paralisia Cerebral, Transtorno do Espectro Autista (TEA) e Transtorno de Déficit de Atenção e Hiperatividade (TDAH).</p>
               </article>
             </div>
@@ -235,10 +298,7 @@
             </div>
           </div>
         </div>
-
       </div>
-
-     
     </section>
 
     <section class="paisecuidadores">
@@ -291,6 +351,7 @@
       <div class="rodape__grid-rodape__box-mapa">
         <h3>Mapa do site</h3>
         <ul>
+          <li><a href="#quemsomos" class="scroll-suave">Quem somos</a></li>
           <li><a href="#especialidades" class="scroll-suave">Especialidades</a></li>
           <li><a href="#terapias" class="scroll-suave">Terapias</a></li>
           <li><a href="#profissionais" class="scroll-suave">Profissionais</a></li>
@@ -304,12 +365,12 @@
           <li><a href="https://www.facebook.com/clinicafundamento/" target="_blank"><i class="fab fa-facebook" title="Nosso Facebook"></i></a></li>
           <li><a href="https://www.instagram.com/clinicafundamento/" target="_blank" title="Nosso Instagram"><i class="fab fa-instagram" title="Instagram"></i></a></li>
         </ul>
-        <p>Terapeuta Ocupacional:</p><p>Flávia Spíndola F. Baiocchi</p><p>CREFITO 10.329 DF/TO</p>
+        <p>Responsável técnica:</p><p>Dra. Flávia Spíndola F. Baiocchi</p><p>CREFITO 10.329 DF/TO</p>
       </div>
       <div class="rodape__grid-rodape__box-endereco">
         <h3>Endereço</h3>
         <p>Águas Claras Shopping</p>
-        <p>Av. das Araucárias n° 2.005, 5o andar, sala 522</p>
+        <p>Av. das Araucárias n° 2.005, 5° andar, sala 522</p>
         <p>Águas Claras - Brasília-DF - CEP: 71.936-250</p>
         <p><i class="fab fa-whatsapp"></i><a href="tel:61991840455"> (61) 9 9184-0455</a></p>
         <p><i class="far fa-envelope"></i> <a href="mailto:contato@clinicafundamento.com.br">contato@clinicafundamento.com.br</a></p>
@@ -318,7 +379,8 @@
   </footer>
   
   <div class="assinatura">
-    Criado por <a href="http://www.baiocchilousa.com.br" target="_blank">Baiocchi&Lousa 2019 &copy;</a>
+    Criado por <a href="http://www.baiocchilousa.com.br" target="_blank">Baiocchi&Lousa 2020 &copy;</a>
+    | Fotos: <a href="https://instagram.com/samuelvieirafotografo" target="_blank">Samuel Vieira</a>
   </div>
   <script src="assets/js/menu.js"></script>
   <script src="assets/js/scrollprogress.js"></script>

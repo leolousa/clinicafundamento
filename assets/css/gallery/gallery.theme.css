@@ -35,3 +35,127 @@
   text-decoration: none;
   transition: color .1s;
 }
+
+/* Caixas das fotos*/
+
+.gallery__box-foto-1 {
+  position: absolute;
+  top: 7vh;
+  right: 0;
+  background-color: rgb(51, 204, 153, 0.6);
+  width: auto;
+  padding: 0px 150px 0px 20px;
+  
+ 
+}
+
+.gallery__box-foto-1__titulo {
+  font-size: 4vh;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+}
+
+.gallery__box-foto-1__subtitulo {
+  font-size: 3vh;
+  font-weight: bold;
+  color: #9900cc;
+  text-align: left;
+
+}
+
+.gallery__box-foto-2 {
+  position: absolute;
+  top: 7vh;
+  left: 0;
+  background-color: rgb(153, 0, 204, 0.6);
+  width: auto;
+  padding: 0px 35px 0px 50px;
+ 
+}
+
+.gallery__box-foto-2__titulo {
+  font-size: 4vh;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+}
+
+.gallery__box-foto-2__subtitulo {
+  font-size: 3vh;
+  font-weight: bold;
+  color: #ffcc00;
+  text-align: left;
+}
+
+.gallery__box-foto-3 {
+  position: absolute;
+  top: 7vh;
+  right: 0;
+  background-color: rgb(255, 102, 0, 0.8);
+  width: auto;
+  padding: 0px 90px 0px 20px;
+ 
+}
+
+.gallery__box-foto-3__titulo {
+  font-size: 4vh;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+}
+
+.gallery__box-foto-3__subtitulo {
+  font-size: 3vh;
+  font-weight: bold;
+  color: #9900cc;
+  text-align: left;
+}
+
+.gallery__box-foto-4 {
+  position: absolute;
+  top: 7vh;
+  right: 0;
+  background-color: rgb(51, 204, 153, 0.8);
+  width: auto;
+  padding: 0px 20px;
+ 
+}
+
+.gallery__box-foto-4__titulo {
+  font-size: 4vh;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+}
+
+.gallery__box-foto-4__subtitulo {
+  font-size: 2vh;
+  font-weight: bold;
+  color: #9900cc;
+  text-align: left;
+}
+
+.gallery__box-foto-5 {
+  position: absolute;
+  top: 7vh;
+  right: 0;
+  background-color: rgb(247, 98, 88, 0.8);
+  width: auto;
+  padding: 0px 90px 0px 20px;
+ 
+}
+
+.gallery__box-foto-5__titulo {
+  font-size: 4vh;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+}
+
+.gallery__box-foto-5__subtitulo {
+  font-size: 2vh;
+  font-weight: bold;
+  color: #ffe16a;
+  text-align: left;
+}
