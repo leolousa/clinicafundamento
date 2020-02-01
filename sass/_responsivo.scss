@@ -1,5 +1,6 @@
 // Responsividade do site
 
+
 // Telas maiores que 0px - CELULARES
 @media screen and (min-width: 0) {
   .cabecalho__grid-cabecalho {
@@ -73,6 +74,7 @@
      "card-texto"
      "card-imagem";
   }
+  
 }
 
 // Telas maiores que 768px - TABLETS
@@ -118,6 +120,7 @@
   .profissionais__conteudo {
     flex-direction: column;
   }
+  
   
   
 }
@@ -171,6 +174,79 @@
     grid-template-areas: "card-texto card-imagem";
     grid-template-columns: 50% 50%;
   }
+
+  .gallery__box-foto-1__titulo {
+    font-size: 4vh;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+  }
+  
+  .gallery__box-foto-1__subtitulo {
+    font-size: 3vh;
+    font-weight: bold;
+    color: #9900cc;
+    text-align: left;
+  
+  }
+  
+  .gallery__box-foto-2__titulo {
+    font-size: 4vh;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+  }
+  
+  .gallery__box-foto-2__subtitulo {
+    font-size: 3vh;
+    font-weight: bold;
+    color: #ffcc00;
+    text-align: left;
+  }
+  
+  .gallery__box-foto-3__titulo {
+    font-size: 4vh;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+  }
+  
+  .gallery__box-foto-3__subtitulo {
+    font-size: 3vh;
+    font-weight: bold;
+    color: #9900cc;
+    text-align: left;
+  }
+  
+  .gallery__box-foto-4__titulo {
+    font-size: 4vh;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+  }
+  
+  .gallery__box-foto-4__subtitulo {
+    font-size: 2vh;
+    font-weight: bold;
+    color: #9900cc;
+    text-align: left;
+  }
+  
+  .gallery__box-foto-5__titulo {
+    font-size: 4vh;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+  }
+  
+  .gallery__box-foto-5__subtitulo {
+    font-size: 2vh;
+    font-weight: bold;
+    color: #ffe16a;
+    text-align: left;
+  }
+
+
 }
 
 // Telas maiores que 1200px - DESKTOPS NOVOS E TVS
