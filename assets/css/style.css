@@ -541,6 +541,11 @@ article ul, ol {
 #contato {
   padding-top: 240px; }
 
+.erros {
+  background-color: #fff;
+  padding: 40px;
+  text-align: center; }
+
 .cabecalho__grid-cabecalho {
   background-color: #fff;
   display: grid;
