@@ -68,13 +68,15 @@
    .contato, .comochegar {
     padding: 2em 4em 2em 4em;
   }
+
   .card__artigo {
     grid-template-columns: 100%;
     grid-template-areas:
      "card-texto"
      "card-imagem";
   }
-  
+
+
 }
 
 // Telas maiores que 768px - TABLETS
@@ -170,6 +172,7 @@
   .profissionais__conteudo {
     flex-direction: row;
   }
+
   .card__artigo {
     grid-template-areas: "card-texto card-imagem";
     grid-template-columns: 50% 50%;
