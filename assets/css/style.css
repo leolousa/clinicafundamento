@@ -515,7 +515,7 @@ article ul, ol {
 .assinatura {
   background-color: #e3b4f4;
   text-align: center;
-  padding: .2em;
+  padding: 2em;
   font-weight: bold;
   font-size: .8em; }
 
@@ -633,6 +633,12 @@ article ul, ol {
   right: 0;
   background: rgba(0, 0, 0, 0.4);
   transition: 5s; }
+
+blockquote {
+  font-style: italic;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 20px; }
 
 .front {
   border: 0px;
