@@ -88,6 +88,10 @@
   padding: 0px 90px 0px 20px;
  
 }
+
+
+
+
 .gallery__box-foto-1__titulo {
 
   font-weight: bold;
@@ -149,4 +153,17 @@
   font-weight: bold;
   color: #ffe16a;
   text-align: left;
+}
+
+.gallery__box-foto-6__titulo {
+  font-weight: bold;
+  color: white;
+  text-align: left;
+}
+
+.gallery__box-foto-6__subtitulo {
+  font-weight: bold;
+  color: #ffe16a;
+  text-align: left;
+  
 }
